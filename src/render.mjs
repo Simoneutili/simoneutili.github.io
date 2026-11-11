@@ -346,7 +346,7 @@ export function renderHome() {
     <section class="hero-section container" id="about" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div class="hero-bio-col">
-          <p class="nv-kicker">${e(profile.location)} <span aria-hidden="true">/</span> ${e(profile.role)}</p>
+          <p class="nv-kicker">${e(profile.role)}</p>
           <h1 id="hero-title">${e(profile.name)}</h1>
           <p class="hero-lead">${e(profile.tagline)}</p>
 
@@ -354,12 +354,7 @@ export function renderHome() {
             ${profile.bio.map(paragraph => `<p>${e(paragraph)}</p>`).join('')}
           </div>
 
-          <div class="hero-spec-bar">
-            <span class="spec-label">Focus</span>
-            <p class="spec-items">
-              ${profile.interests.map(item => `<span>${e(item)}</span>`).join('<span class="tech-sep" aria-hidden="true">·</span>')}
-            </p>
-          </div>
+          <p class="hero-availability"><span class="availability-dot" aria-hidden="true"></span>${e(profile.availability)}</p>
 
           <div class="hero-toolbar">
             <a class="btn-apple-primary" href="${e(profile.cv)}" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a>
@@ -399,12 +394,7 @@ export function renderHome() {
       ${profile.currentStatus ? `
         <aside class="status-bento reveal-item" aria-label="Current status and MSc thesis search">
           <div class="status-bento-main">
-            <div class="status-header-row">
-              <span class="status-live-pill">
-                <span class="status-pulse-dot" aria-hidden="true"></span>
-                <span>${e(profile.currentStatus.kicker)}</span>
-              </span>
-            </div>
+            <p class="nv-kicker">${e(profile.currentStatus.kicker)}</p>
             <h2 class="status-title">${e(profile.currentStatus.title)}</h2>
             <p class="status-prose">${e(profile.currentStatus.text)}</p>
           </div>

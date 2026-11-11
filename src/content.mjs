@@ -16,17 +16,11 @@ export const profile = {
     'I am an MSc Robotics student at TU Delft and an Embodied AI Engineer at Motion1, with a background in Automation Engineering from the University of Bologna. Driven by curiosity and quick to adapt to new environments, I constantly look for unfamiliar challenges that push me to build and test ideas directly on real robots.',
     'My work lives at the intersection of intelligent control systems and physical AI. Across my experience in reinforcement learning and in imitation learning for general-purpose manipulation, my core interest is keeping learning physically grounded, connecting expressive learned policies with control, dynamics, and long-horizon planning.'
   ],
-  interests: [
-    'Intelligent Control Systems',
-    'Physically Grounded Learning',
-    'Reinforcement & Imitation Learning',
-    'Physical AI & Manipulation',
-    'Long-Horizon Planning'
-  ],
+  availability: 'Open to MSc thesis projects from January 2027 · 6+ months',
   currentStatus: {
-    kicker: 'Current Status · Open for MSc Thesis (Early 2027 · 6+ Months)',
+    kicker: 'MSc Thesis · From January 2027',
     title: 'Looking for an MSc Thesis in Learning-Based Control, Planning & World Models',
-    text: 'I am looking for a 6+ month MSc Thesis opportunity starting in early 2027. Having worked across model-based control, reinforcement learning, and imitation learning on real hardware, my goal is to tackle long-horizon tasks in general-purpose and collaborative robotics, combining learning-based control with model-based planning through learned world models.',
+    text: 'Having worked across model-based control, reinforcement learning, and imitation learning on real hardware, I want to tackle long-horizon tasks in general-purpose and collaborative robotics by combining learning-based control with model-based planning through learned world models.',
     pillars: [
       'Learning- & Model-Based Control',
       'World Models for Planning',
@@ -392,7 +386,7 @@ export const projects = [
       { value: '−81%', label: 'velocity error on triangular test commands (2 Hz)' },
       { value: '7 joints', label: 'calibrated together on a real PAL TIAGo arm' }
     ],
-    context: 'First-author paper accepted at IEEE/ASME AIM 2026 · Developed at LAR, University of Bologna',
+    context: 'First-author paper published at IEEE/ASME AIM 2026 · Developed at LAR, University of Bologna',
     repo: 'https://github.com/Simoneutili/isaaclab-tiago-digitaltwin',
     paperUrl: 'https://doi.org/10.1109/AIM65483.2026.11658146',
     pdfUrl: 'documents/aim2026-real2sim-paper.pdf',
@@ -745,12 +739,12 @@ export const publications = [
     year: '2026',
     venue: 'IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM 2026)',
     shortVenue: 'IEEE/ASME AIM 2026',
-    award: 'Accepted',
+    award: 'Published',
     authors: '**Simone Utili**, Andrea Govoni, Gianluca Palli',
     title: 'Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning',
     description: 'Online curriculum reinforcement learning framework in NVIDIA Isaac Lab that calibrates PhysX joint damping and friction parameters of a velocity-controlled 7-DoF PAL TIAGo digital twin from real-time velocity residuals.',
     contribution: 'First author · Developed from BSc thesis research at the Laboratory of Automation and Robotics (LAR), University of Bologna.',
-    status: 'Accepted at IEEE/ASME AIM 2026',
+    status: 'Published in Proc. IEEE/ASME AIM 2026',
     url: 'https://doi.org/10.1109/AIM65483.2026.11658146',
     pdf: 'documents/aim2026-real2sim-paper.pdf',
     repo: 'https://github.com/Simoneutili/isaaclab-tiago-digitaltwin',
