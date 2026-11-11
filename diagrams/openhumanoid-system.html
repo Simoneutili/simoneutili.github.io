@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="diagram.css">
+<div class="dg" style="width:1000px;height:376px">
+  <div class="tier built" style="left:24px;top:24px;width:952px;height:152px"></div>
+  <div class="lab g" style="left:44px;top:43px">Tier 1 · built and shown live</div>
+  <div class="box" style="left:44px;top:70px;width:150px;height:86px"><b>Operator</b><span>voice, web page,<br>or WhatsApp</span></div>
+  <div class="box" style="left:271px;top:70px;width:190px;height:86px"><b>Language agent</b><span>OpenClaw with OpenAI<br>real-time models</span></div>
+  <div class="box accent" style="left:538px;top:70px;width:190px;height:86px"><b>Whole-body control</b><span>NVIDIA GR00T policy:<br>balance, walking, gestures</span></div>
+  <div class="box dark" style="left:805px;top:70px;width:150px;height:86px"><b>Unitree G1</b><span>MuJoCo first,<br>then the real robot</span></div>
+
+  <div class="tier planned" style="left:24px;top:216px;width:952px;height:136px"></div>
+  <div class="lab" style="left:44px;top:235px">Tier 2 · planned, not integrated in time</div>
+  <div class="box dash" style="left:44px;top:262px;width:215px;height:70px"><b>3D mapping</b><span>LiDAR SLAM, ran on its own</span></div>
+  <div class="box dash" style="left:276px;top:262px;width:215px;height:70px"><b>Navigation</b><span>path planning with Nav2</span></div>
+  <div class="box dash" style="left:508px;top:262px;width:215px;height:70px"><b>Scene understanding</b><span>stereo camera, vision model</span></div>
+  <div class="box dash" style="left:740px;top:262px;width:215px;height:70px"><b>Manipulation</b><span>arm and dexterous hands</span></div>
+
+  <svg viewBox="0 0 1000 376" width="1000" height="376">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#86868b"/></marker>
+    </defs>
+    <path class="ln" d="M198 113 H268" marker-end="url(#a)"/>
+    <path class="ln" d="M465 113 H535" marker-end="url(#a)"/>
+    <path class="ln" d="M732 113 H802" marker-end="url(#a)"/>
+    <text x="232.5" y="104">request</text>
+    <text x="499.5" y="104">HTTP bridge</text>
+    <text x="767" y="104">joint targets</text>
+    <path class="ln d" d="M499.5 216 V122" marker-end="url(#a)"/>
+    <text class="l" x="512" y="201">planned to command the robot through the same bridge</text>
+  </svg>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "simone-utili-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Simone Utili's independent, static robotics portfolio.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs --watch",
+    "preview": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.12"
+  }
+}

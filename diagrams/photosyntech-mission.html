@@ -1,0 +1,33 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="diagram.css">
+<div class="dg" style="width:1000px;height:428px">
+  <div class="lab" style="left:24px;top:30px">Mission</div>
+  <div class="box" style="left:24px;top:92px;width:180px;height:84px"><b>Idle</b><span>waiting for a mission</span></div>
+  <div class="box accent" style="left:350px;top:92px;width:300px;height:84px"><b>Visit planters</b><span>one at a time, from a queue set by a fixed<br>route, the operator, or the route optimizer</span></div>
+  <div class="box" style="left:796px;top:92px;width:180px;height:84px"><b>Return home</b><span>drive back and wait</span></div>
+
+  <div class="tier zoom" style="left:24px;top:226px;width:952px;height:178px"></div>
+  <div class="lab" style="left:44px;top:245px">At each planter</div>
+  <div class="box step" style="left:44px;top:272px;width:164px;height:112px"><em>1</em><b>Drive to the planter</b><span>stop at its entry corner</span></div>
+  <div class="box step" style="left:231px;top:272px;width:164px;height:112px"><em>2</em><b>Raise the arm</b><span>wrist camera facing the plants</span></div>
+  <div class="box step" style="left:418px;top:272px;width:164px;height:112px"><em>3</em><b>Scan sideways</b><span>detect and count flowers along the row</span></div>
+  <div class="box accent step" style="left:605px;top:272px;width:164px;height:112px"><em>4 · repeats per flower</em><b>Pick dead flowers</b><span>drive back, pick, drop in the bin</span></div>
+  <div class="box step" style="left:792px;top:272px;width:164px;height:112px"><em>5</em><b>Stow the arm</b><span>then on to the next planter</span></div>
+
+  <svg viewBox="0 0 1000 428" width="1000" height="428">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#86868b"/></marker>
+    </defs>
+    <path class="ln" d="M208 134 H347" marker-end="url(#a)"/>
+    <path class="ln" d="M654 134 H793" marker-end="url(#a)"/>
+    <text x="277" y="125">start</text>
+    <text x="723" y="125">battery low</text>
+    <path class="ln d" d="M420 92 V66 H114 V89" marker-end="url(#a)"/>
+    <text x="267" y="57">queue empty</text>
+    <path class="ln faint" d="M350 176 L24 226"/>
+    <path class="ln faint" d="M650 176 L976 226"/>
+    <path class="ln" d="M210 328 H229" marker-end="url(#a)"/>
+    <path class="ln" d="M397 328 H416" marker-end="url(#a)"/>
+    <path class="ln" d="M584 328 H603" marker-end="url(#a)"/>
+    <path class="ln" d="M771 328 H790" marker-end="url(#a)"/>
+  </svg>
+</div>
