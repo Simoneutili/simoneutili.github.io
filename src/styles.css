@@ -389,9 +389,7 @@ button {
    ========================================================================== */
 
 .nv-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
+  display: inline-block;
   margin: 0 0 0.5rem;
   padding-left: 0.6rem;
   border-left: 2px solid var(--nv-green-bright);
@@ -863,6 +861,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+  min-width: 0;
 }
 
 .work-media-frame {
