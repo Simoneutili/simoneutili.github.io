@@ -790,11 +790,11 @@ export const publications = [
 
 export const experience = [
   {
-    period: '2026 – Present',
+    period: 'May 2026 – Present',
     role: 'Embodied AI Engineer',
     organization: 'Motion1',
-    detail: 'Robotics R&D',
-    location: 'Remote',
+    detail: 'Humanoid Robot Deployment Startup',
+    location: 'Brussels, Belgium / Remote',
     description: 'Developing the VLA training and RL fine-tuning stack for Unitree G1 and AgiBot G2 humanoids, combining physical and visual simulation data augmentation. Architecting modular Physical AI pipelines over open-source frameworks for agentic 3DGS digital twin reconstruction, Real2Sim dexterous skill transfer from egocentric video, and SLAM-based hand-object tracking and semantic action annotation.',
     tags: ['VLA & RL Fine-Tuning', 'Sim Data Augmentation', 'Real2Sim & 3DGS', 'Egocentric Data Pipelines']
   },
