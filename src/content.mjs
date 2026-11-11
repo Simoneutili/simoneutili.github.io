@@ -14,7 +14,7 @@ export const profile = {
   tagline: 'Bridging intelligent control systems and physically grounded robot learning.',
   bio: [
     'I am an MSc Robotics student at TU Delft and an Embodied AI Engineer at Motion1, with a background in Automation Engineering from the University of Bologna. Driven by curiosity and quick to adapt to new environments, I constantly look for unfamiliar challenges that push me to build and test ideas directly on real robots.',
-    'My work lives at the intersection of intelligent control systems and physical AI. Across my experience in reinforcement learning and in imitation learning for general-purpose manipulation, my core interest is keeping learning physically grounded, connecting expressive learned policies with control, dynamics, and long-horizon planning.'
+    'My work lives at the intersection of intelligent control systems and physical AI. Across my experience in reinforcement learning and in imitation learning for general-purpose manipulation, my core interest is keeping learning physically grounded, connecting expressive learned policies with control, dynamics, and long-horizon planning, especially on bimanual and mobile manipulators.'
   ],
   interests: [
     'Intelligent Control Systems',
