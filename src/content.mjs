@@ -808,13 +808,13 @@ export const experience = [
     tags: ['Collaborative Robotics', 'Industrial Automation', 'Research Analysis']
   },
   {
-    period: 'Mar 2024 – Mar 2025',
-    role: 'Undergraduate Robotics Researcher',
-    organization: 'Laboratory of Automation and Robotics (LAR) · University of Bologna',
-    detail: 'Supervisors: Prof. Gianluca Palli & Andrea Govoni',
+    period: 'Mar – Jun 2024',
+    role: 'Simulation Robotics Engineer (Intern)',
+    organization: 'Laboratory of Automation and Robotics (LAR)',
+    detail: 'University of Bologna',
     location: 'Bologna, Italy',
-    description: 'Developed a USD digital twin of the 7-DoF PAL TIAGo manipulator in NVIDIA Isaac Sim / Isaac Lab and an online curriculum reinforcement learning (SAC / PPO) calibration pipeline to bridge the velocity-control reality gap.',
-    tags: ['Reinforcement Learning', 'NVIDIA Isaac Lab', 'Digital Twins', 'ROS 2']
+    description: 'Controlled a robotic manipulator in NVIDIA Isaac Sim for pick-and-place tasks, implementing RMPFlow motion generation and collision avoidance via Omniverse APIs.',
+    tags: ['NVIDIA Isaac Sim', 'RMPFlow', 'Motion Generation', 'Collision Avoidance']
   }
 ];
 
