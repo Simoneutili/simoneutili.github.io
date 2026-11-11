@@ -62,7 +62,7 @@ export const projects = [
     period: 'Oct 2026',
     institution: 'Zurich Physical AI Hackathon · Black Forest Labs Track',
     award: '1st Place (BFL Track)',
-    authors: '**Simone Utili**, Javier Gil, Miguel, Panagiotis',
+    authors: '**Simone Utili**, Javier Gil, Oscar Devos, Stanisław Sufin',
     videoPreview: 'assets/media/liminal-presentation.mp4',
     image: 'assets/media/liminal-award-team.jpg',
     imageAlt: 'Liminal team with the XLeRobot bimanual setup at the Zurich Physical AI Hackathon',
@@ -116,7 +116,7 @@ export const projects = [
         figure: {
           src: 'assets/media/liminal-award-team.jpg',
           label: 'Team',
-          caption: 'With Javier, Miguel, and Panagiotis and the two-arm robot at DARE Campus, Zurich.',
+          caption: 'With Javier, Oscar, and Stanisław and the two-arm robot at DARE Campus, Zurich.',
           layout: 'side',
           size: 'medium'
         }
@@ -197,7 +197,7 @@ export const projects = [
     period: 'Jun 2026',
     institution: 'EuroTech × UnternehmerTUM Hackathon · Munich',
     award: '',
-    authors: '**Simone Utili**, Javier Gil, Miguel, Panagiotis',
+    authors: '**Simone Utili**, Panagiotis Sarikas, Javier Gil, Miguel Ballesteros Delgado',
     videoPreview: 'assets/media/nursearm-preview.mp4',
     image: 'assets/media/nursearm-setup.jpg',
     imageAlt: 'NurseArm hardware setup with overhead camera, 6-DoF follower and leader arms, and pill cups in Munich',
