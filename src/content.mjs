@@ -16,11 +16,17 @@ export const profile = {
     'I am an MSc Robotics student at TU Delft and an Embodied AI Engineer at Motion1, with a background in Automation Engineering from the University of Bologna. Driven by curiosity and quick to adapt to new environments, I constantly look for unfamiliar challenges that push me to build and test ideas directly on real robots.',
     'My work lives at the intersection of intelligent control systems and physical AI. Across my experience in reinforcement learning and in imitation learning for general-purpose manipulation, my core interest is keeping learning physically grounded, connecting expressive learned policies with control, dynamics, and long-horizon planning.'
   ],
-  availability: 'Open to MSc thesis projects from January 2027 · 6+ months',
+  interests: [
+    'Intelligent Control Systems',
+    'Physically Grounded Learning',
+    'Reinforcement & Imitation Learning',
+    'Physical AI & Manipulation',
+    'Long-Horizon Planning'
+  ],
   currentStatus: {
-    kicker: 'MSc Thesis · From January 2027',
+    kicker: 'Current Status · Open for MSc Thesis (Early 2027 · 6+ Months)',
     title: 'Looking for an MSc Thesis in Learning-Based Control, Planning & World Models',
-    text: 'Having worked across model-based control, reinforcement learning, and imitation learning on real hardware, I want to tackle long-horizon tasks in general-purpose and collaborative robotics by combining learning-based control with model-based planning through learned world models.',
+    text: 'I am looking for a 6+ month MSc Thesis opportunity starting in early 2027. Having worked across model-based control, reinforcement learning, and imitation learning on real hardware, my goal is to tackle long-horizon tasks in general-purpose and collaborative robotics, combining learning-based control with model-based planning through learned world models.',
     pillars: [
       'Learning- & Model-Based Control',
       'World Models for Planning',
