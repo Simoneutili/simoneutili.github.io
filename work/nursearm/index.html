@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" id="top" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>NurseArm: An Assistive Robot Arm for Sorting Medication · Simone Utili</title>
+  <meta name="description" content="A 48-hour healthcare hackathon project in Munich. A language-model agent schedules medication routines and asks a small robot arm to sort and hand over pills, using skills learned from human demonstrations.">
+  <meta property="og:title" content="NurseArm: An Assistive Robot Arm for Sorting Medication · Simone Utili">
+  <meta property="og:description" content="A 48-hour healthcare hackathon project in Munich. A language-model agent schedules medication routines and asks a small robot arm to sort and hand over pills, using skills learned from human demonstrations.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://simoneutili.github.io/assets/media/liminal-award-team.jpg">
+  <meta name="author" content="Simone Utili">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../../assets/fonts/sf-pro-display-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/sf-pro-text-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){try{var q=new URLSearchParams(window.location.search).get('theme');var saved=localStorage.getItem('su-theme');var t=(q==='dark'||q==='light')?q:(saved==='dark'?'dark':'light');document.documentElement.dataset.theme=t;document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../main.js" defer></script>
+</head>
+<body class="paper-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="../../index.html" aria-label="Simone Utili home">
+        <span class="wordmark-name">Simone Utili</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Section navigation">
+        <a href="../../index.html#about" data-section-link="about">About</a>
+        <a href="../../index.html#projects" data-section-link="projects">Research</a>
+        <a href="../../index.html#publications" data-section-link="publications">Publications</a>
+        <a href="../../index.html#hackathons" data-section-link="hackathons">Hackathons</a>
+        <a href="../../index.html#experience" data-section-link="experience">Experience</a>
+        <a class="nav-cv" href="../../documents/simone-utili-cv.pdf" target="_blank" rel="noopener">CV<svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme" title="Toggle light / dark mode">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="theme-toggle-label" data-theme-label>Light</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main"><article class="paper paper-story">
+      <header class="paper-header">
+        <a class="back-link" href="../../index.html#hackathons">← All hackathons</a>
+        <p class="paper-venue">
+          <span>EuroTech × UnternehmerTUM Hackathon · Munich</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span>Jun 2026</span>
+          
+        </p>
+        <h1>NurseArm: An Assistive Robot Arm for Sorting Medication</h1>
+        <p class="paper-tagline">A robot arm that sorts pills on a schedule, and what it taught us about long tasks</p>
+        <p class="paper-authors"><strong class="author-self">Simone Utili</strong>, Panagiotis Sarikas, Javier Gil, Miguel Ballesteros Delgado</p>
+        <div class="paper-links"><a class="paper-btn" href="https://github.com/Simoneutili/nursearm" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg><span>Code</span></a><a class="paper-btn" href="https://arxiv.org/abs/2506.01844" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.75"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg><span>SmolVLA</span></a></div>
+      </header>
+
+      <figure class="paper-teaser">
+        
+          <video controls autoplay muted loop playsinline preload="metadata" poster="../../assets/media/nursearm-setup.jpg" style="aspect-ratio: 8 / 3" aria-label="NurseArm: An Assistive Robot Arm for Sorting Medication demonstration video">
+            <source src="../../assets/media/nursearm-preview.mp4" type="video/mp4">
+          </video>
+        
+        <figcaption>Overhead and wrist camera views of the arm sorting pills into patient cups.</figcaption>
+      </figure>
+
+      <section class="paper-section">
+        <div class="paper-text">
+          
+          <p>NurseArm is a tabletop assistant for medication routines. A six-joint SO-101 arm with two cameras, one above the workspace and one on the wrist, is connected to a web console, voice input, and a language-model agent.</p><p>The agent never sends motor commands itself. It can only call a fixed set of skills, which keeps a language model at a safe distance from the hardware.</p>
+          <ul class="paper-tags" aria-label="Methods and tools">
+            <li>Imitation Learning (ACT / SmolVLA)</li><li>MCP</li><li>SO-101 Arm</li><li>Teleoperation</li>
+          </ul>
+        </div>
+      </section>
+
+      
+
+      <section class="paper-section">
+    <div class="paper-text">
+      <h2>What we built</h2>
+      
+      <ul class="prose-points"><li><strong>Robot.</strong> A six-joint SO-101 arm with one camera above the workspace and one on the wrist.</li><li><strong>Interface.</strong> A web console and voice input.</li><li><strong>Agent.</strong> A language-model agent that calls skills through an MCP server instead of sending motor commands.</li><li><strong>Skills.</strong> Medication routines triggered from a calendar, simple straight-line moves, and policies learned by imitation for sorting pills and handing them over: ACT and SmolVLA, a compact open-source VLA.</li></ul>
+    </div>
+    
+    
+  </section><section class="paper-section">
+    <div class="paper-text has-aside">
+      <h2>Collecting the data</h2>
+      <figure class="paper-figure paper-figure-medium">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/nursearm-setup.jpg" data-lightbox-caption="Overhead camera, robot arm, pill cups, and the second arm used to teleoperate it." aria-label="View full size: Setup">
+      <img src="../../assets/media/nursearm-setup.jpg" alt="Overhead camera, robot arm, pill cups, and the second arm used to teleoperate it." loading="lazy">
+    </button>
+    <figcaption><strong>Setup.</strong> Overhead camera, robot arm, pill cups, and the second arm used to teleoperate it.</figcaption>
+  </figure>
+      <p>We made the physical setup as clean and controlled as we could: an isolated workspace, no background clutter, fixed lighting. Then we stayed up all night and recorded nearly 200 demonstrations, guiding the robot through each one with a second arm that it copies, convinced that a clean setup would be enough for the policy to work.</p>
+    </div>
+    
+    
+  </section><section class="paper-section">
+    <div class="paper-text has-aside">
+      <h2>What we learned</h2>
+      <figure class="paper-figure paper-figure-small">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/nursearm-team.jpg" data-lightbox-caption="With Javier, Miguel, and Panagiotis in Munich, after a night of teleoperation." aria-label="View full size: Team">
+      <img src="../../assets/media/nursearm-team.jpg" alt="With Javier, Miguel, and Panagiotis in Munich, after a night of teleoperation." loading="lazy">
+    </button>
+    <figcaption><strong>Team.</strong> With Javier, Miguel, and Panagiotis in Munich, after a night of teleoperation.</figcaption>
+  </figure>
+      <p>It was not enough. When we ran the learned policy, it did not succeed often enough for a reliable live demo.</p><p>Did it need even cleaner data, or was the task simply too long for a single policy without breaking it into steps? In hindsight, probably the second. That open question was the most valuable thing we took home from the weekend.</p>
+    </div>
+    
+    
+  </section>
+
+      
+        <section class="paper-section">
+          <div class="paper-text"><h2>Photos and clips</h2></div>
+          <div class="paper-gallery paper-gallery-few">
+            <figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <button type="button" class="paper-gallery-btn" data-lightbox-src="../../assets/media/nursearm-venue.jpg" data-lightbox-caption="Kickoff at the UnternehmerTUM auditorium in Munich." aria-label="View full size: Venue">
+      <img src="../../assets/media/nursearm-venue.jpg" alt="Kickoff at the UnternehmerTUM auditorium in Munich." loading="lazy">
+    </button></div>
+    <figcaption><strong>Venue.</strong> Kickoff at the UnternehmerTUM auditorium in Munich.</figcaption>
+  </figure>
+          </div>
+        </section>
+      
+
+      
+
+      <nav class="paper-pager" aria-label="More hackathons">
+        <a href="../openhumanoid/"><span>← Previous</span><strong>OpenHumanoid: Commanding a Unitree G1 Humanoid in Natural Language</strong></a>
+        <a href="../samxl-blade-climber/"><span>Next →</span><strong>A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection</strong></a>
+      </nav>
+    </article></main>
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio">
+          <p class="footer-name">Simone Utili</p>
+          <p class="footer-tagline">MSc Robotics · TU Delft · Delft, Netherlands</p>
+        </div>
+        <div class="footer-links-col">
+          <a class="nv-link" href="mailto:simoutili@gmail.com"><span>simoutili@gmail.com</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="footer-pills">
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://www.linkedin.com/in/simone-utili-372916166/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE AIM 2026</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="../../documents/simone-utili-cv.pdf" download><span>CV (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Simone Utili · Delft, Netherlands</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="media-lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close media viewer">✕ Close</button>
+      <div class="lightbox-stage" id="lightbox-stage"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

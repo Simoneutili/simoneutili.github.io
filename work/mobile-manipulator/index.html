@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" id="top" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator · Simone Utili</title>
+  <meta name="description" content="A simulated bartender robot, a mobile base with a seven-joint arm, picks up a drink and delivers it across a busy restaurant. Following a global path raised navigation success from 74% to 96%, while the arm did just as well without one.">
+  <meta property="og:title" content="Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator · Simone Utili">
+  <meta property="og:description" content="A simulated bartender robot, a mobile base with a seven-joint arm, picks up a drink and delivers it across a busy restaurant. Following a global path raised navigation success from 74% to 96%, while the arm did just as well without one.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://simoneutili.github.io/assets/media/liminal-award-team.jpg">
+  <meta name="author" content="Simone Utili">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../../assets/fonts/sf-pro-display-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/sf-pro-text-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){try{var q=new URLSearchParams(window.location.search).get('theme');var saved=localStorage.getItem('su-theme');var t=(q==='dark'||q==='light')?q:(saved==='dark'?'dark':'light');document.documentElement.dataset.theme=t;document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../main.js" defer></script>
+</head>
+<body class="paper-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="../../index.html" aria-label="Simone Utili home">
+        <span class="wordmark-name">Simone Utili</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Section navigation">
+        <a href="../../index.html#about" data-section-link="about">About</a>
+        <a href="../../index.html#projects" data-section-link="projects">Research</a>
+        <a href="../../index.html#publications" data-section-link="publications">Publications</a>
+        <a href="../../index.html#hackathons" data-section-link="hackathons">Hackathons</a>
+        <a href="../../index.html#experience" data-section-link="experience">Experience</a>
+        <a class="nav-cv" href="../../documents/simone-utili-cv.pdf" target="_blank" rel="noopener">CV<svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme" title="Toggle light / dark mode">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="theme-toggle-label" data-theme-label>Light</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main"><article class="paper">
+      <header class="paper-header">
+        <a class="back-link" href="../../index.html#projects">← All research</a>
+        <p class="paper-venue">
+          <span>TU Delft · Planning &amp; Decision Making</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span>Nov 2025 – Jan 2026</span>
+          
+        </p>
+        <h1>Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator</h1>
+        <p class="paper-tagline">When does a robot need a global plan, and when is a local controller enough?</p>
+        <p class="paper-authors"><strong class="author-self">Simone Utili</strong>, Francesco Marani, Javier Gil, Núria Seguí</p>
+        <div class="paper-links"><a class="paper-btn" href="../../documents/barista-motion-planning-report.pdf"><svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Zm0 0v5h5M9 13h6M9 17h6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Report (PDF)</span></a><a class="paper-btn" href="https://github.com/Simoneutili/BartenderMobileManipulator" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg><span>Code</span></a><a class="paper-btn" href="https://www.youtube.com/watch?v=8MRPteQAve4" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg><span>Video</span></a></div>
+      </header>
+
+      <figure class="paper-teaser">
+        
+          <video controls autoplay muted loop playsinline preload="metadata" poster="../../assets/mobile-manipulator.png" aria-label="Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator demonstration video">
+            <source src="../../assets/media/barista-preview.mp4" type="video/mp4">
+          </video>
+        
+        <figcaption>The full task in simulation: drive to the bar, grasp the bottle, carry it across the room, and place it on a table.</figcaption>
+      </figure>
+
+      <section class="paper-section">
+        <div class="paper-text">
+          <h2>Overview</h2>
+          <p>A simulated bartender robot has to drive to the bar, pick up a bottle, carry it across a busy restaurant, and place it on a table. We used this task to study a practical question in robot motion: when is a global plan worth computing, and when is a local controller enough?</p>
+          <ul class="paper-tags" aria-label="Methods and tools">
+            <li>Motion Planning</li><li>Model Predictive Control</li><li>Mobile Manipulation</li><li>PyBullet</li>
+          </ul>
+        </div>
+      </section>
+
+      
+
+      <section class="paper-section">
+    <div class="paper-text has-aside">
+      <h2>The robot and the task</h2>
+      <figure class="paper-figure paper-figure-medium">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/barista-robot.png" data-lightbox-caption="A Clearpath Boxer base carrying a Franka Panda arm, in the simulated restaurant." aria-label="View full size: Albert">
+      <img src="../../assets/media/barista-robot.png" alt="A Clearpath Boxer base carrying a Franka Panda arm, in the simulated restaurant." loading="lazy">
+    </button>
+    <figcaption><strong>Albert.</strong> A Clearpath Boxer base carrying a Franka Panda arm, in the simulated restaurant.</figcaption>
+  </figure>
+      <p>&quot;Albert&quot; is a mobile manipulator: a Clearpath Boxer wheeled base carrying a Franka Panda arm, with ten degrees of freedom in total. The restaurant is a 20 m × 10 m room with a bar counter, tables, and moving obstacles.</p><p>Planning for all ten degrees of freedom at once across the whole room is impractical. We split the task into four phases (approach, grasp, transport, deliver) and move either the base or the arm in each.</p>
+    </div>
+    
+    
+  </section><section class="paper-section">
+    <div class="paper-text">
+      <h2>Two strategies, compared</h2>
+      
+      <p>For both the base and the arm, we compared two strategies: model predictive control (MPC) on its own, and MPC following a path from a sampling-based global planner (PRM, RRT, or RRT*). A task sequencer steps through the four phases and hands each one to the chosen planner and controller.</p>
+    </div>
+    <figure class="paper-figure paper-figure-wide">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/bartender-architecture.png" data-lightbox-caption="Task sequencer, global planner, and the MPC controller for the base and the arm." aria-label="View full size: Control and planning">
+      <img src="../../assets/media/bartender-architecture.png" alt="Task sequencer, global planner, and the MPC controller for the base and the arm." loading="lazy">
+    </button>
+    <figcaption><strong>Control and planning.</strong> Task sequencer, global planner, and the MPC controller for the base and the arm.</figcaption>
+  </figure>
+    
+  </section><section class="paper-section">
+    <div class="paper-text">
+      <h2>Navigation: a global plan matters</h2>
+      
+      <p>Over 30 randomized trials, MPC on its own reached the goal 74% of the time. Counters and tables form dead ends that a local optimizer cannot escape.</p><p>Adding a global path raised success to 87% with RRT, 91% with PRM, and 96% with RRT*. PRM takes longer to set up, but its roadmap can be reused for every delivery in the same room, and it produced the shortest and smoothest paths.</p>
+    </div>
+    <figure class="paper-figure paper-figure-wide">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/bartender-global-paths.png" data-lightbox-caption="Paths from the three global planners, each followed by the base controller across the restaurant." aria-label="View full size: Global paths">
+      <img src="../../assets/media/bartender-global-paths.png" alt="Paths from the three global planners, each followed by the base controller across the restaurant." loading="lazy">
+    </button>
+    <figcaption><strong>Global paths.</strong> Paths from the three global planners, each followed by the base controller across the restaurant.</figcaption>
+  </figure>
+    
+  </section><section class="paper-section">
+    <div class="paper-text">
+      <h2>Avoiding moving obstacles</h2>
+      
+      <p>For moving obstacles such as people and bar stools, the controller takes their velocity into account over its prediction horizon and bends the path around them ahead of time, while keeping the motion of the base smooth.</p>
+    </div>
+    <figure class="paper-figure paper-figure-side">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/bartender-mpc-obstacles.png" data-lightbox-caption="The base trajectory when obstacles are moving (left) and when they are static (right)." aria-label="View full size: Moving versus static obstacles">
+      <img src="../../assets/media/bartender-mpc-obstacles.png" alt="The base trajectory when obstacles are moving (left) and when they are static (right)." loading="lazy">
+    </button>
+    <figcaption><strong>Moving versus static obstacles.</strong> The base trajectory when obstacles are moving (left) and when they are static (right).</figcaption>
+  </figure>
+    
+  </section><section class="paper-section">
+    <div class="paper-text has-aside">
+      <h2>Manipulation: a global plan does not</h2>
+      <figure class="paper-figure paper-figure-medium">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/bartender-arm-ee.png" data-lightbox-caption="The path of the gripper under MPC alone: approach, descend to grasp, lift, and hold." aria-label="View full size: Arm trajectory">
+      <img src="../../assets/media/bartender-arm-ee.png" alt="The path of the gripper under MPC alone: approach, descend to grasp, lift, and hold." loading="lazy">
+    </button>
+    <figcaption><strong>Arm trajectory.</strong> The path of the gripper under MPC alone: approach, descend to grasp, lift, and hold.</figcaption>
+  </figure>
+      <p>For the arm, the picture reverses. Once the base is parked at the bar, the arm works in a small, open workspace. MPC alone already places the gripper within 1.7 cm of its target in about four seconds. Adding a global planner did not improve accuracy and cost six to seven seconds of planning time.</p><p>The practical conclusion: use sampling-based planning for room-scale navigation, and plain online MPC for the arm.</p>
+    </div>
+    
+    
+  </section>
+
+      
+
+      
+
+      <nav class="paper-pager" aria-label="More research">
+        <a href="../haptic-teaching/"><span>← Previous</span><strong>Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration</strong></a>
+        <a href="../real2sim/"><span>Next →</span><strong>Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning</strong></a>
+      </nav>
+    </article></main>
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio">
+          <p class="footer-name">Simone Utili</p>
+          <p class="footer-tagline">MSc Robotics · TU Delft · Delft, Netherlands</p>
+        </div>
+        <div class="footer-links-col">
+          <a class="nv-link" href="mailto:simoutili@gmail.com"><span>simoutili@gmail.com</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="footer-pills">
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://www.linkedin.com/in/simone-utili-372916166/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE AIM 2026</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="../../documents/simone-utili-cv.pdf" download><span>CV (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Simone Utili · Delft, Netherlands</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="media-lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close media viewer">✕ Close</button>
+      <div class="lightbox-stage" id="lightbox-stage"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

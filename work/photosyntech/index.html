@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" id="top" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Photosyntech: Autonomous Greenhouse Mobile Manipulator · Simone Utili</title>
+  <meta name="description" content="A five-person TU Delft project. We turned a small omnidirectional robot with an arm into an autonomous greenhouse inspector that maps the greenhouse, decides which planters to visit, scans the plants, and removes dead flowers. I led navigation and localization.">
+  <meta property="og:title" content="Photosyntech: Autonomous Greenhouse Mobile Manipulator · Simone Utili">
+  <meta property="og:description" content="A five-person TU Delft project. We turned a small omnidirectional robot with an arm into an autonomous greenhouse inspector that maps the greenhouse, decides which planters to visit, scans the plants, and removes dead flowers. I led navigation and localization.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://simoneutili.github.io/assets/media/liminal-award-team.jpg">
+  <meta name="author" content="Simone Utili">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../../assets/fonts/sf-pro-display-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/sf-pro-text-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){try{var q=new URLSearchParams(window.location.search).get('theme');var saved=localStorage.getItem('su-theme');var t=(q==='dark'||q==='light')?q:(saved==='dark'?'dark':'light');document.documentElement.dataset.theme=t;document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../main.js" defer></script>
+</head>
+<body class="paper-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="../../index.html" aria-label="Simone Utili home">
+        <span class="wordmark-name">Simone Utili</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Section navigation">
+        <a href="../../index.html#about" data-section-link="about">About</a>
+        <a href="../../index.html#projects" data-section-link="projects">Research</a>
+        <a href="../../index.html#publications" data-section-link="publications">Publications</a>
+        <a href="../../index.html#hackathons" data-section-link="hackathons">Hackathons</a>
+        <a href="../../index.html#experience" data-section-link="experience">Experience</a>
+        <a class="nav-cv" href="../../documents/simone-utili-cv.pdf" target="_blank" rel="noopener">CV<svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme" title="Toggle light / dark mode">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="theme-toggle-label" data-theme-label>Light</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main"><article class="paper">
+      <header class="paper-header">
+        <a class="back-link" href="../../index.html#projects">← All research</a>
+        <p class="paper-venue">
+          <span>TU Delft · Multi-Disciplinary Project</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span>May – Jun 2026</span>
+          
+        </p>
+        <h1>Photosyntech: Autonomous Greenhouse Mobile Manipulator</h1>
+        <p class="paper-tagline">A mobile robot that patrols a greenhouse, inspects each planter, and removes dead flowers</p>
+        <p class="paper-authors"><strong class="author-self">Simone Utili</strong>, Calvin Hsu, Nefeli Pelekanou, Benthe Raadschelders, Mart Wevers</p>
+        <div class="paper-links"><a class="paper-btn" href="https://github.com/Simoneutili/photosyntech-autonomous-greenhouse-inspector" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg><span>Code</span></a></div>
+      </header>
+
+      <figure class="paper-teaser">
+        
+          <video controls autoplay muted loop playsinline preload="metadata" poster="../../assets/media/photosyntech-flower-grab.jpg" aria-label="Photosyntech: Autonomous Greenhouse Mobile Manipulator demonstration video">
+            <source src="../../assets/media/photosyntech-flower-grab.mp4" type="video/mp4">
+          </video>
+        
+        <figcaption>The real robot picks a dead flower with its custom gripper and drops it in the onboard bin.</figcaption>
+      </figure>
+
+      <section class="paper-section">
+        <div class="paper-text">
+          <h2>Overview</h2>
+          <p>Photosyntech is an autonomous inspector for greenhouses. It drives itself between planters, reads the climate data of each one, counts and measures the flowers, and picks off dead ones with its arm. From a web dashboard, an operator can follow the mission, reorder the queue of planters, or take over by remote control.</p><p>We built it on a MIRTE Master, a small robot with omnidirectional wheels and a five-joint arm, and added a custom 3D-printed gripper, a wrist camera, and a collection bin. The software is split into six ROS 2 modules: perception, navigation, manipulation, task planning, the operator interface, and a relay for climate data.</p>
+          <ul class="paper-tags" aria-label="Methods and tools">
+            <li>ROS 2</li><li>SLAM &amp; Navigation</li><li>Task Planning</li><li>Mobile Manipulation</li>
+          </ul>
+        </div>
+      </section>
+
+      
+
+      <section class="paper-section">
+    <div class="paper-text">
+      <h2>Deciding where to go</h2>
+      
+      <p>A mission controller takes the robot through the same sequence at every planter: drive to it, raise the arm, scan while moving sideways, remove any dead flowers, stow the arm. Each step is tried once and skipped if it fails, so a single missed detection never stalls the whole mission.</p><p>On its first sweep the robot visits every planter along the shortest route. Once it has baseline readings, it scores each planter by how unusual its climate and flower health are, and plans the most valuable route that fits within a fixed travel budget. This is an orienteering problem, which we solve exactly as an integer linear program.</p>
+    </div>
+    <figure class="paper-figure paper-figure-wide">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/photosyntech-mission.png" data-lightbox-caption="Top: the mission loop. Bottom: the five steps the robot repeats at each planter." aria-label="View full size: Mission logic">
+      <img src="../../assets/media/photosyntech-mission.png" alt="Top: the mission loop. Bottom: the five steps the robot repeats at each planter." loading="lazy">
+    </button>
+    <figcaption><strong>Mission logic.</strong> Top: the mission loop. Bottom: the five steps the robot repeats at each planter.</figcaption>
+  </figure>
+    
+  </section><section class="paper-section">
+    <div class="paper-text">
+      <h2>Navigation and localization</h2>
+      
+      <p>This was my part of the project. The robot first builds a map of the greenhouse aisles, then localizes against that saved map during missions.</p><p>Because its wheels let it move in any direction, I used a sampling-based predictive controller (MPPI) that plans sideways motion directly. The robot can slide along a planter while its wrist camera stays pointed at the plants, which a planner designed for differential-drive robots cannot do.</p><p>Safety is layered. An emergency stop overrides remote control, which in turn overrides autonomous driving. A LiDAR monitor slows the robot and then stops it near obstacles, and a person detector halts it when someone comes within a meter.</p>
+    </div>
+    <figure class="paper-figure paper-figure-side">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/photosyntech-sim2real-nav.png" data-lightbox-caption="Top: the simulated greenhouse and the physical test arena. Bottom: the maps and cost maps the robot builds in each." aria-label="View full size: Simulation and real arena">
+      <img src="../../assets/media/photosyntech-sim2real-nav.png" alt="Top: the simulated greenhouse and the physical test arena. Bottom: the maps and cost maps the robot builds in each." loading="lazy">
+    </button>
+    <figcaption><strong>Simulation and real arena.</strong> Top: the simulated greenhouse and the physical test arena. Bottom: the maps and cost maps the robot builds in each.</figcaption>
+  </figure>
+    
+  </section><section class="paper-section">
+    <div class="paper-text has-aside">
+      <h2>Inspecting plants and removing dead flowers</h2>
+      <figure class="paper-figure paper-figure-medium">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/photosyntech-hardware.png" data-lightbox-caption="The arm with our 3D-printed gripper and wrist camera, and the collection bin behind it." aria-label="View full size: The robot">
+      <img src="../../assets/media/photosyntech-hardware.png" alt="The arm with our 3D-printed gripper and wrist camera, and the collection bin behind it." loading="lazy">
+    </button>
+    <figcaption><strong>The robot.</strong> The arm with our 3D-printed gripper and wrist camera, and the collection bin behind it.</figcaption>
+  </figure>
+      <p>During each pass, the wrist camera reads the tag on the planter, which triggers a reading of its temperature, humidity, light, and soil moisture. The camera also counts flowers by color, merges detections across frames so nothing is counted twice, and estimates plant height.</p><p>When the camera finds a pest marker, the nearest flower cluster is treated as wilted. The robot returns to it, lines itself up, and uses the arm to pick the stem and drop it in the bin.</p>
+    </div>
+    
+    
+  </section><section class="paper-section">
+    <div class="paper-text">
+      <h2>From simulation to the real robot</h2>
+      
+      <p>We tested in simulation and in a physical greenhouse arena. In simulation the robot knew its position to within 4.3 cm (median) while moving and avoided every static and moving obstacle. On hardware the median error was 7.0 cm. Full missions completed 8 of 8 planters in simulation and 3 of 3 on the real robot, without a single stall.</p><p>Two lessons came from the hardware. First, the four wheels responded unevenly, so the robot drifted when moving sideways or turning on the spot. Tuning the controller of each wheel individually was the most effective fix for stable localization. Second, the depth camera on the body saw less than the simulation assumed, so we moved tag and flower detection to the wrist camera. This also let the robot scan at close range without backing into narrow aisles.</p>
+    </div>
+    <figure class="paper-figure paper-figure-side">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/photosyntech-nav-results.png" data-lightbox-caption="Top: position error, heading error, and obstacle avoidance. Bottom: average time spent in each step of a planter visit." aria-label="View full size: Simulation versus real robot">
+      <img src="../../assets/media/photosyntech-nav-results.png" alt="Top: position error, heading error, and obstacle avoidance. Bottom: average time spent in each step of a planter visit." loading="lazy">
+    </button>
+    <figcaption><strong>Simulation versus real robot.</strong> Top: position error, heading error, and obstacle avoidance. Bottom: average time spent in each step of a planter visit.</figcaption>
+  </figure>
+    
+  </section>
+
+      
+        <section class="paper-section">
+          <div class="paper-text"><h2>Gallery</h2></div>
+          <div class="paper-gallery">
+            <figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <video controls playsinline preload="metadata" poster="../../assets/media/photosyntech-scan.jpg">
+      <source src="../../assets/media/photosyntech-real-scan.mp4" type="video/mp4">
+    </video></div>
+    <figcaption><strong>Planter Scan.</strong> Close-range inspection of a planter on the real robot, followed by dead-flower removal.</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <video controls playsinline preload="metadata" poster="../../assets/media/photosyntech-entry.jpg">
+      <source src="../../assets/media/photosyntech-real-nav.mp4" type="video/mp4">
+    </video></div>
+    <figcaption><strong>Navigation.</strong> Driving between planters and scanning one sideways on the real robot (5× speed).</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <video controls playsinline preload="metadata" poster="../../assets/media/photosyntech-hmi-poster.jpg">
+      <source src="../../assets/media/photosyntech-hmi-demo.mp4" type="video/mp4">
+    </video></div>
+    <figcaption><strong>Dashboard.</strong> The operator dashboard: live map, planter queue, and climate and flower readings for each planter.</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <video controls playsinline preload="metadata" poster="../../assets/media/photosyntech-hmi-poster.jpg">
+      <source src="../../assets/media/photosyntech-hmi-teleop.mp4" type="video/mp4">
+    </video></div>
+    <figcaption><strong>Teleoperation.</strong> Driving the base and arm remotely from the dashboard, with live LiDAR and camera views.</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <video controls playsinline preload="metadata" poster="../../assets/media/photosyntech-sim-poster.jpg">
+      <source src="../../assets/media/photosyntech-sim-scan.mp4" type="video/mp4">
+    </video></div>
+    <figcaption><strong>Simulation.</strong> The sideways planter scan in simulation, with flowers detected from the wrist camera.</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <button type="button" class="paper-gallery-btn" data-lightbox-src="../../assets/media/photosyntech-setup.jpg" data-lightbox-caption="The test arena at TU Delft: rows of planters with tag markers, and the robot." aria-label="View full size: Arena">
+      <img src="../../assets/media/photosyntech-setup.jpg" alt="The test arena at TU Delft: rows of planters with tag markers, and the robot." loading="lazy">
+    </button></div>
+    <figcaption><strong>Arena.</strong> The test arena at TU Delft: rows of planters with tag markers, and the robot.</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <button type="button" class="paper-gallery-btn" data-lightbox-src="../../assets/media/photosyntech-planters.jpg" data-lightbox-caption="A row of planters with identification tags, pest markers, and flowers of different varieties." aria-label="View full size: Planters">
+      <img src="../../assets/media/photosyntech-planters.jpg" alt="A row of planters with identification tags, pest markers, and flowers of different varieties." loading="lazy">
+    </button></div>
+    <figcaption><strong>Planters.</strong> A row of planters with identification tags, pest markers, and flowers of different varieties.</figcaption>
+  </figure>
+          </div>
+        </section>
+      
+
+      
+
+      <nav class="paper-pager" aria-label="More research">
+        <a href="../real2sim/"><span>← Previous</span><strong>Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning</strong></a>
+        <a href="../haptic-teaching/"><span>Next →</span><strong>Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration</strong></a>
+      </nav>
+    </article></main>
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio">
+          <p class="footer-name">Simone Utili</p>
+          <p class="footer-tagline">MSc Robotics · TU Delft · Delft, Netherlands</p>
+        </div>
+        <div class="footer-links-col">
+          <a class="nv-link" href="mailto:simoutili@gmail.com"><span>simoutili@gmail.com</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="footer-pills">
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://www.linkedin.com/in/simone-utili-372916166/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE AIM 2026</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="../../documents/simone-utili-cv.pdf" download><span>CV (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Simone Utili · Delft, Netherlands</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="media-lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close media viewer">✕ Close</button>
+      <div class="lightbox-stage" id="lightbox-stage"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

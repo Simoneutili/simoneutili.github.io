@@ -1,0 +1,2151 @@
+<!doctype html>
+<html lang="en" id="top" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Simone Utili · Robotics, Control &amp; Learning (TU Delft)</title>
+  <meta name="description" content="Portfolio of Simone Utili, MSc Robotics student at TU Delft working on control theory, reinforcement learning, motion planning, and physical AI.">
+  <meta property="og:title" content="Simone Utili · Robotics, Control &amp; Learning (TU Delft)">
+  <meta property="og:description" content="Portfolio of Simone Utili, MSc Robotics student at TU Delft working on control theory, reinforcement learning, motion planning, and physical AI.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://simoneutili.github.io/assets/media/liminal-award-team.jpg">
+  <meta name="author" content="Simone Utili">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/sf-pro-display-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sf-pro-text-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){try{var q=new URLSearchParams(window.location.search).get('theme');var saved=localStorage.getItem('su-theme');var t=(q==='dark'||q==='light')?q:(saved==='dark'?'dark':'light');document.documentElement.dataset.theme=t;document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="index.html" aria-label="Simone Utili home">
+        <span class="wordmark-name">Simone Utili</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Section navigation">
+        <a href="#about" data-section-link="about">About</a>
+        <a href="#projects" data-section-link="projects">Research</a>
+        <a href="#publications" data-section-link="publications">Publications</a>
+        <a href="#hackathons" data-section-link="hackathons">Hackathons</a>
+        <a href="#experience" data-section-link="experience">Experience</a>
+        <a class="nav-cv" href="documents/simone-utili-cv.pdf" target="_blank" rel="noopener">CV<svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme" title="Toggle light / dark mode">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="theme-toggle-label" data-theme-label>Light</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <!-- HERO / BIO -->
+    <section class="hero-section container" id="about" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-bio-col">
+          <p class="nv-kicker">Delft, Netherlands <span aria-hidden="true">/</span> MSc Robotics · TU Delft</p>
+          <h1 id="hero-title">Simone Utili</h1>
+          <p class="hero-lead">Bridging intelligent control systems and physically grounded robot learning.</p>
+
+          <div class="hero-prose">
+            <p>I am an MSc Robotics student at TU Delft and an Embodied AI Engineer at Motion1, with a background in Automation Engineering from the University of Bologna. Driven by curiosity and quick to adapt to new environments, I constantly look for unfamiliar challenges that push me to build and test ideas directly on real robots.</p><p>My work lives at the intersection of intelligent control systems and physical AI. Across my experience in reinforcement learning and in imitation learning for general-purpose manipulation, my core interest is keeping learning physically grounded, connecting expressive learned policies with control, dynamics, and long-horizon planning, especially on bimanual and mobile manipulators.</p>
+          </div>
+
+          <div class="hero-spec-bar">
+            <span class="spec-label">Focus</span>
+            <p class="spec-items">
+              <span>Intelligent Control Systems</span><span class="tech-sep" aria-hidden="true">·</span><span>Physically Grounded Learning</span><span class="tech-sep" aria-hidden="true">·</span><span>Reinforcement &amp; Imitation Learning</span><span class="tech-sep" aria-hidden="true">·</span><span>Physical AI &amp; Manipulation</span><span class="tech-sep" aria-hidden="true">·</span><span>Long-Horizon Planning</span>
+            </p>
+          </div>
+
+          <div class="hero-toolbar">
+            <a class="btn-apple-primary" href="documents/simone-utili-cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a>
+            <div class="hero-links-inline">
+              <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE AIM 2026</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="nv-link" href="https://www.linkedin.com/in/simone-utili-372916166/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="nv-link" href="mailto:simoutili@gmail.com"><span>simoutili@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-portrait-col">
+          <div class="portrait-bento" data-portrait-switcher>
+            <div class="portrait-stage">
+              <img id="hero-portrait-img" src="assets/media/profile-g1.jpg" alt="Simone Utili operating the Unitree G1 humanoid robot at ETH Zurich" width="640" height="760" fetchpriority="high">
+              <div class="portrait-overlay">
+                <span class="portrait-caption" id="hero-portrait-caption">Testing locomotion on the Unitree G1 at ETH Zurich</span>
+              </div>
+            </div>
+            <div class="portrait-thumbs" role="group" aria-label="Switch personal robotics photo">
+              
+                <button type="button" class="portrait-thumb-btn is-active"
+                  data-portrait-src="assets/media/profile-g1.jpg"
+                  data-portrait-alt="Simone Utili operating the Unitree G1 humanoid robot at ETH Zurich"
+                  data-portrait-caption="Testing locomotion on the Unitree G1 at ETH Zurich"
+                  aria-pressed="true"
+                  title="Testing locomotion on the Unitree G1 at ETH Zurich">
+                  <img src="assets/media/profile-g1.jpg" alt="Simone Utili operating the Unitree G1 humanoid robot at ETH Zurich" width="64" height="64" loading="lazy">
+                </button>
+              
+                <button type="button" class="portrait-thumb-btn "
+                  data-portrait-src="assets/media/profile-builder.jpg"
+                  data-portrait-alt="Simone Utili assembling and testing an autonomous mobile robot at TU Delft"
+                  data-portrait-caption="Prototyping mobile hardware at TU Delft"
+                  aria-pressed="false"
+                  title="Prototyping mobile hardware at TU Delft">
+                  <img src="assets/media/profile-builder.jpg" alt="Simone Utili assembling and testing an autonomous mobile robot at TU Delft" width="64" height="64" loading="lazy">
+                </button>
+              
+                <button type="button" class="portrait-thumb-btn "
+                  data-portrait-src="assets/media/profile-exomars.jpg"
+                  data-portrait-alt="Simone Utili next to the ExoMars Rosalind Franklin Rover at ESA ESTEC"
+                  data-portrait-caption="ExoMars Rosalind Franklin Rover at ESA ESTEC"
+                  aria-pressed="false"
+                  title="ExoMars Rosalind Franklin Rover at ESA ESTEC">
+                  <img src="assets/media/profile-exomars.jpg" alt="Simone Utili next to the ExoMars Rosalind Franklin Rover at ESA ESTEC" width="64" height="64" loading="lazy">
+                </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+        <aside class="status-bento reveal-item" aria-label="Current status and MSc thesis search">
+          <div class="status-bento-main">
+            <div class="status-header-row">
+              <span class="status-live-pill">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                <span>Current Status · Open for MSc Thesis (Early 2027 · 6+ Months)</span>
+              </span>
+            </div>
+            <h2 class="status-title">Looking for an MSc Thesis in Learning-Based Control, Planning &amp; World Models</h2>
+            <p class="status-prose">I am looking for a 6+ month MSc Thesis opportunity starting in early 2027. Having worked across model-based control, reinforcement learning, and imitation learning on real hardware, my goal is to tackle long-horizon tasks in general-purpose and collaborative robotics, combining learning-based control with model-based planning through learned world models.</p>
+          </div>
+          <div class="status-bento-side">
+            <span class="spec-label">Thesis Directions</span>
+            <ul class="status-pillars" aria-label="Target thesis topics">
+              <li>Learning- &amp; Model-Based Control</li><li>World Models for Planning</li><li>Long-Horizon Manipulation</li><li>Collaborative Robots</li>
+            </ul>
+            <a class="nv-link status-cta" href="mailto:simoutili@gmail.com?subject=MSc%20Thesis%20Opportunity%20-%20Simone%20Utili">
+              <span>Get in touch about thesis topics</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </aside>
+      
+    </section>
+
+    <!-- SEGMENTED FILTER CONTROL -->
+    <section class="filter-toolbar-section container" id="work" aria-label="Filter research and hackathons">
+      <div class="segmented-control" role="toolbar" aria-label="Category filter">
+        <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All (9)</button>
+        <button type="button" class="filter-btn" data-filter="research" aria-pressed="false">Research (4)</button>
+        <button type="button" class="filter-btn" data-filter="hackathon" aria-pressed="false">Hackathons (5)</button>
+        <button type="button" class="filter-btn" data-filter="control" aria-pressed="false">Control &amp; Planning</button>
+        <button type="button" class="filter-btn" data-filter="learning" aria-pressed="false">RL &amp; Learning</button>
+        <button type="button" class="filter-btn" data-filter="hardware" aria-pressed="false">Hardware</button>
+      </div>
+    </section>
+
+    <!-- SECTION 1: RESEARCH & PROJECTS -->
+    <section class="work-section container" id="projects" data-work-section="research" aria-labelledby="projects-title">
+      <div class="section-header reveal-item">
+        <div>
+          <p class="nv-kicker">Academic Research &amp; Systems Engineering</p>
+          <h2 id="projects-title">Research &amp; Engineering</h2>
+        </div>
+        <p class="section-desc">Online reinforcement learning calibration in NVIDIA Isaac Lab, whole-body motion planning &amp; MPC, autonomous mobile manipulation, and bilateral haptic control.</p>
+      </div>
+      <div class="work-list">
+        <article class="work-card reveal-item" id="card-real2sim" data-card data-categories="all research research control learning">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="real2sim">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/digital-twin.jpg" data-autoplay-video aria-label="Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning animated video preview">
+              <source src="assets/media/real2sim-preview.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/real2sim/" aria-label="Open full page for Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="real2sim"
+                data-media-type="video"
+                data-media-src="assets/media/real2sim-preview.mp4"
+                data-media-poster="assets/digital-twin.jpg"
+                data-media-caption="The simulated TIAGo next to the real joint velocities it is being matched to."
+                aria-pressed="true"
+                title="Calibration">
+                ▶ Calibration
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="real2sim"
+                data-media-type="image"
+                data-media-src="assets/media/real2sim-fleet.jpg"
+                data-media-poster="assets/digital-twin.jpg"
+                data-media-caption="Training on many copies of the simulated robot in parallel."
+                aria-pressed="false"
+                title="RL Training">
+                RL Training
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="real2sim"
+                data-media-type="image"
+                data-media-src="assets/media/real2sim-architecture.png"
+                data-media-poster="assets/digital-twin.jpg"
+                data-media-caption="The system architecture from the paper: Isaac Lab and the real robot exchange commands and joint states through a ROS 2 bridge."
+                aria-pressed="false"
+                title="Architecture">
+                Architecture
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">LAR · University of Bologna</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">2024 – 2026</span>
+          <span class="award-badge">IEEE/ASME AIM 2026</span>
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/real2sim/">Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning</a>
+        </h3>
+        <p class="work-subtitle">Teaching a simulated robot arm to move like the real one</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Andrea Govoni, Gianluca Palli</p>
+        <p class="work-summary">First-author paper at IEEE/ASME AIM 2026. A reinforcement learning agent tunes the joint friction and damping of a simulated robot arm until it moves like the real one, cutting the velocity mismatch by more than 80%.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>Reinforcement Learning</span><span class="tech-sep" aria-hidden="true">·</span><span>Curriculum Learning</span><span class="tech-sep" aria-hidden="true">·</span><span>Digital Twins</span><span class="tech-sep" aria-hidden="true">·</span><span>NVIDIA Isaac Lab</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-real2sim" data-drawer-toggle="drawer-real2sim">
+            <span>Details &amp; Media (3)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/real2sim/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili/isaaclab-tiago-digitaltwin" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>Paper</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="documents/aim2026-real2sim-paper.pdf" target="_blank" rel="noopener"><span>Accepted version (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-real2sim" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">How the calibration works</h4>
+      <p>The real robot and its simulated copy receive the same velocity command. A reinforcement learning agent watches both responses and, at every control step, sets two values for each joint of the simulated arm: its damping and its friction. The agent is rewarded when the simulated joint velocities move closer to the measured ones.</p><p>We chose these two parameters deliberately. Masses and inertias come from the CAD model and stay accurate over the life of a robot, while friction and damping drift with wear and lubrication, so they are the main source of a growing mismatch. The simulator is treated as a black box: the method needs no analytical model of its physics and no gradients, so it does not depend on the specific robot.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/real2sim-loop.png" data-lightbox-caption="The same command drives the real arm and its digital twin. The agent compares the two velocity responses and adjusts the damping and friction of each simulated joint." aria-label="View full size: Calibration loop">
+        <img src="assets/media/real2sim-loop.png" alt="The same command drives the real arm and its digital twin. The agent compares the two velocity responses and adjusts the damping and friction of each simulated joint." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Calibration loop:</strong> The same command drives the real arm and its digital twin. The agent compares the two velocity responses and adjusts the damping and friction of each simulated joint.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">A curriculum instead of everything at once</h4>
+      <p>Calibrating all seven joints together from the start was unstable: each joint behaves differently, the reward is noisy, and the search space is large. We used a curriculum instead. The agent starts with a single joint, and a new joint is added each time the simulated and real velocity profiles agree closely enough (a cosine similarity above 0.90), until all seven are calibrated together.</p><p>We compared two standard algorithms, SAC and PPO, with and without the curriculum. With the curriculum, the hyperparameters of each were tuned automatically over 30 trials. SAC with the curriculum learned fastest and reached the best final reward, −1.71 against −2.33 for SAC trained on all joints at once.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/real2sim-training-curves.png" data-lightbox-caption="Average episode reward during training. (a) All seven joints at once, with default settings. (b) With the curriculum and tuned hyperparameters. (c) Final fine-tuning of SAC, with and without the curriculum." aria-label="View full size: Training">
+        <img src="assets/media/real2sim-training-curves.png" alt="Average episode reward during training. (a) All seven joints at once, with default settings. (b) With the curriculum and tuned hyperparameters. (c) Final fine-tuning of SAC, with and without the curriculum." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Training:</strong> Average episode reward during training. (a) All seven joints at once, with default settings. (b) With the curriculum and tuned hyperparameters. (c) Final fine-tuning of SAC, with and without the curriculum.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Results</h4>
+      <p>We tested the calibrated twin on sinusoidal and triangular velocity commands that were not used in training, at frequencies from 0.25 to 4 Hz. Before calibration the simulated arm follows the command almost perfectly, while the real arm lags behind it, and the gap grows with frequency. After calibration the simulated joints reproduce that lag.</p><p>At 2 Hz the average velocity error against the real robot fell from 0.036 to 0.005 rad/s on sinusoidal commands (about 86%) and from 0.026 to 0.005 rad/s on triangular ones (about 81%).</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/real2sim-velocity-matching.png" data-lightbox-caption="Each joint before calibration (upper rows) and after it (lower rows). Dashed blue: commanded velocity. Green: real robot. Red: simulated twin. After calibration the simulated curve follows the real one." aria-label="View full size: Velocity matching at 2 Hz">
+        <img src="assets/media/real2sim-velocity-matching.png" alt="Each joint before calibration (upper rows) and after it (lower rows). Dashed blue: commanded velocity. Green: real robot. Red: simulated twin. After calibration the simulated curve follows the real one." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Velocity matching at 2 Hz:</strong> Each joint before calibration (upper rows) and after it (lower rows). Dashed blue: commanded velocity. Green: real robot. Red: simulated twin. After calibration the simulated curve follows the real one.</figcaption>
+    </figure>
+  </div><div class="prose-block">
+      <h4 class="prose-heading">Limits and next steps</h4>
+      <p>The damping and friction values the agent settles on are not unique physical constants. Several combinations reproduce the same motion, so they are best read as equivalent parameters that absorb effects the simulator does not model. Because the agent receives the real velocities at every step, the calibration keeps adapting while the robot runs, instead of producing one fixed set of numbers.</p><p>The study covers joint velocities only. The next step is to extend it to the trajectory of the end effector, for a fuller picture of the robot dynamics.</p>
+    </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/digital-twin.jpg">
+                        <source src="assets/media/real2sim-preview.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Calibration:</strong> The simulated TIAGo next to the real joint velocities it is being matched to.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/real2sim-fleet.jpg" data-lightbox-caption="Training on many copies of the simulated robot in parallel." aria-label="View full size: RL Training">
+                      <img src="assets/media/real2sim-fleet.jpg" alt="Training on many copies of the simulated robot in parallel." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>RL Training:</strong> Training on many copies of the simulated robot in parallel.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/real2sim-architecture.png" data-lightbox-caption="The system architecture from the paper: Isaac Lab and the real robot exchange commands and joint states through a ROS 2 bridge." aria-label="View full size: Architecture">
+                      <img src="assets/media/real2sim-architecture.png" alt="The system architecture from the paper: Isaac Lab and the real robot exchange commands and joint states through a ROS 2 bridge." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Architecture:</strong> The system architecture from the paper: Isaac Lab and the real robot exchange commands and joint states through a ROS 2 bridge.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-photosyntech" data-card data-categories="all research research control hardware">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="photosyntech">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/media/photosyntech-setup.jpg" data-autoplay-video aria-label="Photosyntech: Autonomous Greenhouse Mobile Manipulator animated video preview">
+              <source src="assets/media/photosyntech-flower-grab.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/photosyntech/" aria-label="Open full page for Photosyntech: Autonomous Greenhouse Mobile Manipulator"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for Photosyntech: Autonomous Greenhouse Mobile Manipulator">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="photosyntech"
+                data-media-type="video"
+                data-media-src="assets/media/photosyntech-flower-grab.mp4"
+                data-media-poster="assets/media/photosyntech-flower-grab.jpg"
+                data-media-caption="The arm and custom gripper pick a dead flower from the planter and drop it in the onboard bin."
+                aria-pressed="true"
+                title="Flower Removal">
+                ▶ Flower Removal
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="photosyntech"
+                data-media-type="video"
+                data-media-src="assets/media/photosyntech-real-scan.mp4"
+                data-media-poster="assets/media/photosyntech-scan.jpg"
+                data-media-caption="Close-range inspection of a planter on the real robot, followed by dead-flower removal."
+                aria-pressed="false"
+                title="Planter Scan">
+                ▶ Planter Scan
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="photosyntech"
+                data-media-type="video"
+                data-media-src="assets/media/photosyntech-real-nav.mp4"
+                data-media-poster="assets/media/photosyntech-entry.jpg"
+                data-media-caption="Driving between planters and scanning one sideways on the real robot (5× speed)."
+                aria-pressed="false"
+                title="Navigation">
+                ▶ Navigation
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="photosyntech"
+                data-media-type="video"
+                data-media-src="assets/media/photosyntech-hmi-demo.mp4"
+                data-media-poster="assets/media/photosyntech-hmi-poster.jpg"
+                data-media-caption="The operator dashboard: live map, planter queue, and climate and flower readings for each planter."
+                aria-pressed="false"
+                title="Dashboard">
+                ▶ Dashboard
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="photosyntech"
+                data-media-type="video"
+                data-media-src="assets/media/photosyntech-hmi-teleop.mp4"
+                data-media-poster="assets/media/photosyntech-hmi-poster.jpg"
+                data-media-caption="Driving the base and arm remotely from the dashboard, with live LiDAR and camera views."
+                aria-pressed="false"
+                title="Teleoperation">
+                ▶ Teleoperation
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">TU Delft · Multi-Disciplinary Project</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">May – Jun 2026</span>
+          
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/photosyntech/">Photosyntech: Autonomous Greenhouse Mobile Manipulator</a>
+        </h3>
+        <p class="work-subtitle">A mobile robot that patrols a greenhouse, inspects each planter, and removes dead flowers</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Calvin Hsu, Nefeli Pelekanou, Benthe Raadschelders, Mart Wevers</p>
+        <p class="work-summary">A five-person TU Delft project. We turned a small omnidirectional robot with an arm into an autonomous greenhouse inspector that maps the greenhouse, decides which planters to visit, scans the plants, and removes dead flowers. I led navigation and localization.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>ROS 2</span><span class="tech-sep" aria-hidden="true">·</span><span>SLAM &amp; Navigation</span><span class="tech-sep" aria-hidden="true">·</span><span>Task Planning</span><span class="tech-sep" aria-hidden="true">·</span><span>Mobile Manipulation</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-photosyntech" data-drawer-toggle="drawer-photosyntech">
+            <span>Details &amp; Media (8)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/photosyntech/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili/photosyntech-autonomous-greenhouse-inspector" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-photosyntech" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Deciding where to go</h4>
+      <p>A mission controller takes the robot through the same sequence at every planter: drive to it, raise the arm, scan while moving sideways, remove any dead flowers, stow the arm. Each step is tried once and skipped if it fails, so a single missed detection never stalls the whole mission.</p><p>On its first sweep the robot visits every planter along the shortest route. Once it has baseline readings, it scores each planter by how unusual its climate and flower health are, and plans the most valuable route that fits within a fixed travel budget. This is an orienteering problem, which we solve exactly as an integer linear program.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/photosyntech-mission.png" data-lightbox-caption="Top: the mission loop. Bottom: the five steps the robot repeats at each planter." aria-label="View full size: Mission logic">
+        <img src="assets/media/photosyntech-mission.png" alt="Top: the mission loop. Bottom: the five steps the robot repeats at each planter." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Mission logic:</strong> Top: the mission loop. Bottom: the five steps the robot repeats at each planter.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Navigation and localization</h4>
+      <p>This was my part of the project. The robot first builds a map of the greenhouse aisles, then localizes against that saved map during missions.</p><p>Because its wheels let it move in any direction, I used a sampling-based predictive controller (MPPI) that plans sideways motion directly. The robot can slide along a planter while its wrist camera stays pointed at the plants, which a planner designed for differential-drive robots cannot do.</p><p>Safety is layered. An emergency stop overrides remote control, which in turn overrides autonomous driving. A LiDAR monitor slows the robot and then stops it near obstacles, and a person detector halts it when someone comes within a meter.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/photosyntech-sim2real-nav.png" data-lightbox-caption="Top: the simulated greenhouse and the physical test arena. Bottom: the maps and cost maps the robot builds in each." aria-label="View full size: Simulation and real arena">
+        <img src="assets/media/photosyntech-sim2real-nav.png" alt="Top: the simulated greenhouse and the physical test arena. Bottom: the maps and cost maps the robot builds in each." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Simulation and real arena:</strong> Top: the simulated greenhouse and the physical test arena. Bottom: the maps and cost maps the robot builds in each.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Inspecting plants and removing dead flowers</h4>
+      <p>During each pass, the wrist camera reads the tag on the planter, which triggers a reading of its temperature, humidity, light, and soil moisture. The camera also counts flowers by color, merges detections across frames so nothing is counted twice, and estimates plant height.</p><p>When the camera finds a pest marker, the nearest flower cluster is treated as wilted. The robot returns to it, lines itself up, and uses the arm to pick the stem and drop it in the bin.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/photosyntech-hardware.png" data-lightbox-caption="The arm with our 3D-printed gripper and wrist camera, and the collection bin behind it." aria-label="View full size: The robot">
+        <img src="assets/media/photosyntech-hardware.png" alt="The arm with our 3D-printed gripper and wrist camera, and the collection bin behind it." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>The robot:</strong> The arm with our 3D-printed gripper and wrist camera, and the collection bin behind it.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">From simulation to the real robot</h4>
+      <p>We tested in simulation and in a physical greenhouse arena. In simulation the robot knew its position to within 4.3 cm (median) while moving and avoided every static and moving obstacle. On hardware the median error was 7.0 cm. Full missions completed 8 of 8 planters in simulation and 3 of 3 on the real robot, without a single stall.</p><p>Two lessons came from the hardware. First, the four wheels responded unevenly, so the robot drifted when moving sideways or turning on the spot. Tuning the controller of each wheel individually was the most effective fix for stable localization. Second, the depth camera on the body saw less than the simulation assumed, so we moved tag and flower detection to the wrist camera. This also let the robot scan at close range without backing into narrow aisles.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/photosyntech-nav-results.png" data-lightbox-caption="Top: position error, heading error, and obstacle avoidance. Bottom: average time spent in each step of a planter visit." aria-label="View full size: Simulation versus real robot">
+        <img src="assets/media/photosyntech-nav-results.png" alt="Top: position error, heading error, and obstacle avoidance. Bottom: average time spent in each step of a planter visit." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Simulation versus real robot:</strong> Top: position error, heading error, and obstacle avoidance. Bottom: average time spent in each step of a planter visit.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/photosyntech-flower-grab.jpg">
+                        <source src="assets/media/photosyntech-flower-grab.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Flower Removal:</strong> The arm and custom gripper pick a dead flower from the planter and drop it in the onboard bin.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/photosyntech-scan.jpg">
+                        <source src="assets/media/photosyntech-real-scan.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Planter Scan:</strong> Close-range inspection of a planter on the real robot, followed by dead-flower removal.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/photosyntech-entry.jpg">
+                        <source src="assets/media/photosyntech-real-nav.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Navigation:</strong> Driving between planters and scanning one sideways on the real robot (5× speed).
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/photosyntech-hmi-poster.jpg">
+                        <source src="assets/media/photosyntech-hmi-demo.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Dashboard:</strong> The operator dashboard: live map, planter queue, and climate and flower readings for each planter.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/photosyntech-hmi-poster.jpg">
+                        <source src="assets/media/photosyntech-hmi-teleop.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Teleoperation:</strong> Driving the base and arm remotely from the dashboard, with live LiDAR and camera views.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/photosyntech-sim-poster.jpg">
+                        <source src="assets/media/photosyntech-sim-scan.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Simulation:</strong> The sideways planter scan in simulation, with flowers detected from the wrist camera.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/photosyntech-setup.jpg" data-lightbox-caption="The test arena at TU Delft: rows of planters with tag markers, and the robot." aria-label="View full size: Arena">
+                      <img src="assets/media/photosyntech-setup.jpg" alt="The test arena at TU Delft: rows of planters with tag markers, and the robot." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Arena:</strong> The test arena at TU Delft: rows of planters with tag markers, and the robot.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/photosyntech-planters.jpg" data-lightbox-caption="A row of planters with identification tags, pest markers, and flowers of different varieties." aria-label="View full size: Planters">
+                      <img src="assets/media/photosyntech-planters.jpg" alt="A row of planters with identification tags, pest markers, and flowers of different varieties." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Planters:</strong> A row of planters with identification tags, pest markers, and flowers of different varieties.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-haptic-teaching" data-card data-categories="all research research control learning">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="haptic-teaching">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/haptic.png" data-autoplay-video aria-label="Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration animated video preview">
+              <source src="assets/media/haptic-preview.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/haptic-teaching/" aria-label="Open full page for Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="haptic-teaching"
+                data-media-type="video"
+                data-media-src="assets/media/haptic-preview.mp4"
+                data-media-poster="assets/media/haptic-setup.jpg"
+                data-media-caption="Recording a demonstration with the haptic device while the learned path updates on screen."
+                aria-pressed="true"
+                title="Teleop Demo">
+                ▶ Teleop Demo
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="haptic-teaching"
+                data-media-type="image"
+                data-media-src="assets/media/haptic-setup.jpg"
+                data-media-poster="assets/haptic.png"
+                data-media-caption="The study setup: the Haply 2DIY device next to the laptop running the task."
+                aria-pressed="false"
+                title="Setup">
+                Setup
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="haptic-teaching"
+                data-media-type="image"
+                data-media-src="assets/media/haply-2diy.png"
+                data-media-poster="assets/haptic.png"
+                data-media-caption="The Haply 2DIY, a desktop device that measures hand position and pushes back with force."
+                aria-pressed="false"
+                title="Haply 2DIY">
+                Haply 2DIY
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="haptic-teaching"
+                data-media-type="image"
+                data-media-src="assets/haptic.png"
+                data-media-poster="assets/haptic.png"
+                data-media-caption="The study interface: the crack to trace on the left, the Mars station scene and learned path on the right."
+                aria-pressed="false"
+                title="Interface">
+                Interface
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">TU Delft · Control in Human–Robot Interaction</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Feb – Mar 2026</span>
+          
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/haptic-teaching/">Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration</a>
+        </h3>
+        <p class="work-subtitle">Does force feedback help people teach robots better? A user study with 20 participants</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Francesco Marani, Lapo Veca</p>
+        <p class="work-summary">A user study with 20 participants on whether force feedback helps people give a robot better demonstrations. Guidance that fades as the operator improves made teaching about a third faster and clearly less tiring.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>Haptics</span><span class="tech-sep" aria-hidden="true">·</span><span>Learning from Demonstration</span><span class="tech-sep" aria-hidden="true">·</span><span>Gaussian Processes</span><span class="tech-sep" aria-hidden="true">·</span><span>User Study</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-haptic-teaching" data-drawer-toggle="drawer-haptic-teaching">
+            <span>Details &amp; Media (4)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/haptic-teaching/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili/haptic-teleoperation-teaching" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-haptic-teaching" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Setup</h4>
+      <p>Participants traced the crack with a Haply 2DIY, a small desktop device that both measures hand position and pushes back with force. A screen showed the crack, the demonstrations recorded so far, and the path the system had learned from them.</p><p>After each demonstration, a Gaussian Process model was updated with the new path. The model gives a smooth average trajectory and also reports how uncertain it still is at each point along the crack.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/haply-2diy.png" data-lightbox-caption="The haptic device used to trace the crack." aria-label="View full size: Haply 2DIY">
+        <img src="assets/media/haply-2diy.png" alt="The haptic device used to trace the crack." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Haply 2DIY:</strong> The haptic device used to trace the crack.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Five kinds of feedback</h4>
+      <p>Each participant tried all five conditions, in a counterbalanced order, and gave ten demonstrations per condition:</p><ul class="prose-points"><li><strong>No feedback.</strong> The baseline.</li><li><strong>Virtual walls.</strong> The device resists when the hand leaves the crack.</li><li><strong>Fixed guidance.</strong> Walls, plus a constant gentle pull toward the center of the crack.</li><li><strong>Fading guidance.</strong> The same pull, growing weaker with each demonstration as the operator gains confidence.</li><li><strong>Personalised guidance.</strong> A pull toward the path learned from the operator&#39;s own demonstrations, stronger where the model is more certain.</li></ul>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/haptic.png" data-lightbox-caption="Left: the device and the crack to trace. Right: the Mars station scene with the recorded demonstrations and the learned path." aria-label="View full size: Study interface">
+        <img src="assets/haptic.png" alt="Left: the device and the crack to trace. Right: the Mars station scene with the recorded demonstrations and the learned path." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Study interface:</strong> Left: the device and the crack to trace. Right: the Mars station scene with the recorded demonstrations and the learned path.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Results</h4>
+      <p>Guidance toward the path helped. Walls alone did not.</p><p>Fading guidance was the best all-round. The model converged in 80 seconds instead of 122 without feedback, participants rated their workload far lower (29 against 52 on the NASA-TLX scale), and they hit the walls about ten times less often.</p><p>Personalised guidance produced the most consistent demonstrations. It halved the variation from one demonstration to the next and left the learned path with the least uncertainty.</p><p>Virtual walls on their own gave no meaningful improvement over no feedback at all.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/haptic-results.png" data-lightbox-caption="Left: variation between demonstrations. Center: time for the model to converge. Right: perceived workload. NH: no feedback, VW: virtual walls, CG: fixed guidance, FG: fading guidance, SG: personalised guidance." aria-label="View full size: Results by condition">
+        <img src="assets/media/haptic-results.png" alt="Left: variation between demonstrations. Center: time for the model to converge. Right: perceived workload. NH: no feedback, VW: virtual walls, CG: fixed guidance, FG: fading guidance, SG: personalised guidance." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Results by condition:</strong> Left: variation between demonstrations. Center: time for the model to converge. Right: perceived workload. NH: no feedback, VW: virtual walls, CG: fixed guidance, FG: fading guidance, SG: personalised guidance.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/haptic-setup.jpg">
+                        <source src="assets/media/haptic-preview.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Teleop Demo:</strong> Recording a demonstration with the haptic device while the learned path updates on screen.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/haptic-setup.jpg" data-lightbox-caption="The study setup: the Haply 2DIY device next to the laptop running the task." aria-label="View full size: Setup">
+                      <img src="assets/media/haptic-setup.jpg" alt="The study setup: the Haply 2DIY device next to the laptop running the task." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Setup:</strong> The study setup: the Haply 2DIY device next to the laptop running the task.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/haply-2diy.png" data-lightbox-caption="The Haply 2DIY, a desktop device that measures hand position and pushes back with force." aria-label="View full size: Haply 2DIY">
+                      <img src="assets/media/haply-2diy.png" alt="The Haply 2DIY, a desktop device that measures hand position and pushes back with force." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Haply 2DIY:</strong> The Haply 2DIY, a desktop device that measures hand position and pushes back with force.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/haptic.png" data-lightbox-caption="The study interface: the crack to trace on the left, the Mars station scene and learned path on the right." aria-label="View full size: Interface">
+                      <img src="assets/haptic.png" alt="The study interface: the crack to trace on the left, the Mars station scene and learned path on the right." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Interface:</strong> The study interface: the crack to trace on the left, the Mars station scene and learned path on the right.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-mobile-manipulator" data-card data-categories="all research research control">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="mobile-manipulator">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/mobile-manipulator.png" data-autoplay-video aria-label="Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator animated video preview">
+              <source src="assets/media/barista-preview.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/mobile-manipulator/" aria-label="Open full page for Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="mobile-manipulator"
+                data-media-type="video"
+                data-media-src="assets/media/barista-preview.mp4"
+                data-media-poster="assets/mobile-manipulator.png"
+                data-media-caption="The full task in simulation, from the bar to the table."
+                aria-pressed="true"
+                title="Pick &amp; Place">
+                ▶ Pick &amp; Place
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="mobile-manipulator"
+                data-media-type="image"
+                data-media-src="assets/mobile-manipulator.png"
+                data-media-poster="assets/mobile-manipulator.png"
+                data-media-caption="The simulated 20 m × 10 m restaurant with a bar counter, tables, and moving obstacles."
+                aria-pressed="false"
+                title="Environment">
+                Environment
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="mobile-manipulator"
+                data-media-type="image"
+                data-media-src="assets/media/barista-robot.png"
+                data-media-poster="assets/mobile-manipulator.png"
+                data-media-caption="Albert: a Clearpath Boxer base carrying a Franka Panda arm."
+                aria-pressed="false"
+                title="Robot">
+                Robot
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">TU Delft · Planning &amp; Decision Making</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Nov 2025 – Jan 2026</span>
+          
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/mobile-manipulator/">Whole-Body Motion Planning &amp; MPC for a Bartender Mobile Manipulator</a>
+        </h3>
+        <p class="work-subtitle">When does a robot need a global plan, and when is a local controller enough?</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Francesco Marani, Javier Gil, Núria Seguí</p>
+        <p class="work-summary">A simulated bartender robot, a mobile base with a seven-joint arm, picks up a drink and delivers it across a busy restaurant. Following a global path raised navigation success from 74% to 96%, while the arm did just as well without one.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>Motion Planning</span><span class="tech-sep" aria-hidden="true">·</span><span>Model Predictive Control</span><span class="tech-sep" aria-hidden="true">·</span><span>Mobile Manipulation</span><span class="tech-sep" aria-hidden="true">·</span><span>PyBullet</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-mobile-manipulator" data-drawer-toggle="drawer-mobile-manipulator">
+            <span>Details &amp; Media (3)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/mobile-manipulator/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili/BartenderMobileManipulator" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            <a class="nv-link" href="documents/barista-motion-planning-report.pdf" target="_blank" rel="noopener"><span>Report (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://www.youtube.com/watch?v=8MRPteQAve4" target="_blank" rel="noopener noreferrer"><span>Video</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-mobile-manipulator" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">The robot and the task</h4>
+      <p>&quot;Albert&quot; is a mobile manipulator: a Clearpath Boxer wheeled base carrying a Franka Panda arm, with ten degrees of freedom in total. The restaurant is a 20 m × 10 m room with a bar counter, tables, and moving obstacles.</p><p>Planning for all ten degrees of freedom at once across the whole room is impractical. We split the task into four phases (approach, grasp, transport, deliver) and move either the base or the arm in each.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/barista-robot.png" data-lightbox-caption="A Clearpath Boxer base carrying a Franka Panda arm, in the simulated restaurant." aria-label="View full size: Albert">
+        <img src="assets/media/barista-robot.png" alt="A Clearpath Boxer base carrying a Franka Panda arm, in the simulated restaurant." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Albert:</strong> A Clearpath Boxer base carrying a Franka Panda arm, in the simulated restaurant.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Two strategies, compared</h4>
+      <p>For both the base and the arm, we compared two strategies: model predictive control (MPC) on its own, and MPC following a path from a sampling-based global planner (PRM, RRT, or RRT*). A task sequencer steps through the four phases and hands each one to the chosen planner and controller.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/bartender-architecture.png" data-lightbox-caption="Task sequencer, global planner, and the MPC controller for the base and the arm." aria-label="View full size: Control and planning">
+        <img src="assets/media/bartender-architecture.png" alt="Task sequencer, global planner, and the MPC controller for the base and the arm." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Control and planning:</strong> Task sequencer, global planner, and the MPC controller for the base and the arm.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Navigation: a global plan matters</h4>
+      <p>Over 30 randomized trials, MPC on its own reached the goal 74% of the time. Counters and tables form dead ends that a local optimizer cannot escape.</p><p>Adding a global path raised success to 87% with RRT, 91% with PRM, and 96% with RRT*. PRM takes longer to set up, but its roadmap can be reused for every delivery in the same room, and it produced the shortest and smoothest paths.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/bartender-global-paths.png" data-lightbox-caption="Paths from the three global planners, each followed by the base controller across the restaurant." aria-label="View full size: Global paths">
+        <img src="assets/media/bartender-global-paths.png" alt="Paths from the three global planners, each followed by the base controller across the restaurant." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Global paths:</strong> Paths from the three global planners, each followed by the base controller across the restaurant.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Avoiding moving obstacles</h4>
+      <p>For moving obstacles such as people and bar stools, the controller takes their velocity into account over its prediction horizon and bends the path around them ahead of time, while keeping the motion of the base smooth.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/bartender-mpc-obstacles.png" data-lightbox-caption="The base trajectory when obstacles are moving (left) and when they are static (right)." aria-label="View full size: Moving versus static obstacles">
+        <img src="assets/media/bartender-mpc-obstacles.png" alt="The base trajectory when obstacles are moving (left) and when they are static (right)." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Moving versus static obstacles:</strong> The base trajectory when obstacles are moving (left) and when they are static (right).</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Manipulation: a global plan does not</h4>
+      <p>For the arm, the picture reverses. Once the base is parked at the bar, the arm works in a small, open workspace. MPC alone already places the gripper within 1.7 cm of its target in about four seconds. Adding a global planner did not improve accuracy and cost six to seven seconds of planning time.</p><p>The practical conclusion: use sampling-based planning for room-scale navigation, and plain online MPC for the arm.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/bartender-arm-ee.png" data-lightbox-caption="The path of the gripper under MPC alone: approach, descend to grasp, lift, and hold." aria-label="View full size: Arm trajectory">
+        <img src="assets/media/bartender-arm-ee.png" alt="The path of the gripper under MPC alone: approach, descend to grasp, lift, and hold." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Arm trajectory:</strong> The path of the gripper under MPC alone: approach, descend to grasp, lift, and hold.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/mobile-manipulator.png">
+                        <source src="assets/media/barista-preview.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Pick &amp; Place:</strong> The full task in simulation, from the bar to the table.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/mobile-manipulator.png" data-lightbox-caption="The simulated 20 m × 10 m restaurant with a bar counter, tables, and moving obstacles." aria-label="View full size: Environment">
+                      <img src="assets/mobile-manipulator.png" alt="The simulated 20 m × 10 m restaurant with a bar counter, tables, and moving obstacles." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Environment:</strong> The simulated 20 m × 10 m restaurant with a bar counter, tables, and moving obstacles.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/barista-robot.png" data-lightbox-caption="Albert: a Clearpath Boxer base carrying a Franka Panda arm." aria-label="View full size: Robot">
+                      <img src="assets/media/barista-robot.png" alt="Albert: a Clearpath Boxer base carrying a Franka Panda arm." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Robot:</strong> Albert: a Clearpath Boxer base carrying a Franka Panda arm.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PUBLICATIONS -->
+    <section class="work-section container" id="publications" aria-labelledby="publications-title">
+      <div class="section-header reveal-item">
+        <div>
+          <p class="nv-kicker">Peer-Reviewed &amp; Industry Literature</p>
+          <h2 id="publications-title">Publications</h2>
+        </div>
+      </div>
+      <div class="pub-list">
+        <article class="pub-card reveal-item" id="pub-real2sim">
+    <div class="pub-media">
+      
+        <video class="pub-video" muted loop playsinline preload="metadata" poster="assets/digital-twin.jpg" data-autoplay-video aria-label="Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning preview">
+          <source src="assets/media/real2sim-preview.mp4" type="video/mp4">
+        </video>
+      
+    </div>
+    <div class="pub-body">
+      <div class="work-meta-top">
+        <span class="work-institution">IEEE/ASME AIM 2026</span>
+        <span class="work-meta-dot" aria-hidden="true">·</span>
+        <span class="work-period">2026</span>
+        <span class="award-badge">Published</span>
+      </div>
+      <h3 class="work-title"><a href="publications/real2sim/">Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning</a></h3>
+      
+      <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Andrea Govoni, Gianluca Palli</p>
+      <p class="work-summary">Online curriculum reinforcement learning framework in NVIDIA Isaac Lab that calibrates PhysX joint damping and friction parameters of a velocity-controlled 7-DoF PAL TIAGo digital twin from real-time velocity residuals.</p>
+      <div class="work-actions">
+        <button type="button" class="drawer-toggle-btn" data-bibtex-toggle="bibtex-real2sim" aria-expanded="false" aria-controls="bibtex-real2sim">
+          <span>BibTeX</span>
+          <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="work-links-inline">
+          <a class="nv-link" href="publications/real2sim/"><span>Paper Details</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE Xplore / DOI</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="nv-link" href="documents/aim2026-real2sim-paper.pdf" target="_blank" rel="noopener"><span>PDF</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="nv-link" href="https://github.com/Simoneutili/isaaclab-tiago-digitaltwin" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+      <div class="bibtex-drawer" id="bibtex-real2sim" hidden>
+        <pre><code>@inproceedings{utili2026real2sim,
+  author    = {Utili, Simone and Govoni, Andrea and Palli, Gianluca},
+  title     = {Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning},
+  booktitle = {2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)},
+  year      = {2026},
+  doi       = {10.1109/AIM65483.2026.11658146}
+}</code></pre>
+      </div>
+    </div>
+  </article><article class="pub-card reveal-item" id="pub-collaborative-robotics">
+    <div class="pub-media">
+      
+        <a class="drawer-pdf-link pub-pdf-thumb" href="documents/white-paper-robotica-collaborativa.pdf" target="_blank" rel="noopener" aria-label="Open PDF: La Robotica Collaborativa in Emilia-Romagna">
+          <img src="assets/media/collaborative-robotics.jpg" alt="La Robotica Collaborativa in Emilia-Romagna" loading="lazy" width="420" height="260">
+          <span class="pdf-badge-overlay">Open PDF ↗</span>
+        </a>
+      
+    </div>
+    <div class="pub-body">
+      <div class="work-meta-top">
+        <span class="work-institution">Clust-ER MECH · Emilia-Romagna, Italy</span>
+        <span class="work-meta-dot" aria-hidden="true">·</span>
+        <span class="work-period">2025–2026</span>
+        <span class="award-badge">Published</span>
+      </div>
+      <h3 class="work-title"><a href="publications/collaborative-robotics/">La Robotica Collaborativa in Emilia-Romagna</a></h3>
+      <p class="work-subtitle" lang="it">Stato dell’arte, trend globali e analisi dell’ecosistema regionale (Emilia-Romagna, Italy)</p>
+      <p class="work-authors">Clust-ER MECH Working Group (Co-authored by <strong class="author-self">Simone Utili</strong>, CRIT Research, ART-ER, UNIBO, UNIMORE, UNIFE)</p>
+      <p class="work-summary">Empirical mapping and technical analysis of collaborative robotics adoption, safety standards, and vision integration across manufacturing enterprises and research laboratories in Emilia-Romagna, Italy.</p>
+      <div class="work-actions">
+        <button type="button" class="drawer-toggle-btn" data-bibtex-toggle="bibtex-collaborative-robotics" aria-expanded="false" aria-controls="bibtex-collaborative-robotics">
+          <span>BibTeX</span>
+          <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="work-links-inline">
+          <a class="nv-link" href="publications/collaborative-robotics/"><span>Paper Details</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="nv-link" href="https://mech.clust-er.it/robotica-collaborativa-in-emilia-romagna-il-nuovo-white-paper-mech/" target="_blank" rel="noopener noreferrer"><span>Clust-ER MECH Article</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="nv-link" href="documents/white-paper-robotica-collaborativa.pdf" target="_blank" rel="noopener"><span>PDF</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          
+        </div>
+      </div>
+      <div class="bibtex-drawer" id="bibtex-collaborative-robotics" hidden>
+        <pre><code>@techreport{clustermech2026cobots,
+  author      = {Utili, Simone and {Clust-ER MECH Collaborative Robotics Working Group}},
+  title       = {La Robotica Collaborativa in Emilia-Romagna: Stato dell&#39;arte, trend globali e analisi dell&#39;ecosistema regionale},
+  institution = {Clust-ER MECH},
+  address     = {Emilia-Romagna, Italy},
+  year        = {2026}
+}</code></pre>
+      </div>
+    </div>
+  </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3: HACKATHONS -->
+    <section class="work-section container" id="hackathons" data-work-section="hackathon" aria-labelledby="hackathons-title">
+      <div class="section-header reveal-item">
+        <div>
+          <p class="nv-kicker">Rapid Prototyping &amp; Control Sprints</p>
+          <h2 id="hackathons-title">Hackathons</h2>
+        </div>
+        <p class="section-desc">48-hour deployments on physical humanoids, bimanual manipulators, and custom mechatronic prototypes.</p>
+      </div>
+      <div class="work-list">
+        <article class="work-card reveal-item" id="card-liminal" data-card data-categories="all hackathon hackathon learning hardware">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="liminal">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/media/liminal-award-team.jpg" data-autoplay-video aria-label="Liminal: Long-Horizon Bimanual Manipulation with FLUX.3-Action animated video preview">
+              <source src="assets/media/liminal-presentation.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/liminal/" aria-label="Open full page for Liminal: Long-Horizon Bimanual Manipulation with FLUX.3-Action"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for Liminal: Long-Horizon Bimanual Manipulation with FLUX.3-Action">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="liminal"
+                data-media-type="video"
+                data-media-src="assets/media/liminal-presentation.mp4"
+                data-media-poster="assets/media/liminal-award-team.jpg"
+                data-media-caption="Project presentation and a complete multi-step task on the two-arm robot."
+                aria-pressed="true"
+                title="Presentation">
+                ▶ Presentation
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="liminal"
+                data-media-type="video"
+                data-media-src="assets/media/liminal-vr-teleop.mp4"
+                data-media-poster="assets/media/liminal-vr-rig.jpg"
+                data-media-caption="Collecting demonstrations by teleoperation, then running the learned policy."
+                aria-pressed="false"
+                title="Teleop">
+                ▶ Teleop
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="liminal"
+                data-media-type="image"
+                data-media-src="assets/media/liminal-closeup.jpg"
+                data-media-poster="assets/media/liminal-award-team.jpg"
+                data-media-caption="The 3D-printed two-arm station with an overhead depth camera and wrist cameras."
+                aria-pressed="false"
+                title="Hardware">
+                Hardware
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="liminal"
+                data-media-type="image"
+                data-media-src="assets/media/liminal-vr-rig.jpg"
+                data-media-poster="assets/media/liminal-award-team.jpg"
+                data-media-caption="Recording two-arm demonstrations and testing the policy from a remote machine."
+                aria-pressed="false"
+                title="Setup">
+                Setup
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="liminal"
+                data-media-type="image"
+                data-media-src="assets/media/liminal-kickoff.jpg"
+                data-media-poster="assets/media/liminal-award-team.jpg"
+                data-media-caption="Day one of the Zurich Physical AI Hackathon."
+                aria-pressed="false"
+                title="Kickoff">
+                Kickoff
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">Zurich Physical AI Hackathon · Black Forest Labs Track</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Oct 2026</span>
+          <span class="award-badge">1st Place (BFL Track)</span>
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/liminal/">Liminal: Long-Horizon Bimanual Manipulation with FLUX.3-Action</a>
+        </h3>
+        <p class="work-subtitle">Two robot arms, one learned policy each, and a simple planner that makes them work together</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Javier Gil, Oscar Devos, Stanisław Sufin</p>
+        <p class="work-summary">Winner of the Black Forest Labs track at the Zurich Physical AI Hackathon. We got a two-arm robot to complete multi-step tasks by fine-tuning one FLUX.3-Action policy per arm and coordinating the two with a behavior tree.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>FLUX.3-Action</span><span class="tech-sep" aria-hidden="true">·</span><span>XLeRobot</span><span class="tech-sep" aria-hidden="true">·</span><span>Behavior Trees</span><span class="tech-sep" aria-hidden="true">·</span><span>LoRA Fine-Tuning</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-liminal" data-drawer-toggle="drawer-liminal">
+            <span>Details &amp; Media (5)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/liminal/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Javgilavi/liminal" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://javgilavi.github.io/liminal/" target="_blank" rel="noopener noreferrer"><span>Website</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://bfl.ai/models/flux-3-action" target="_blank" rel="noopener noreferrer"><span>FLUX.3-Action</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            <a class="nv-link" href="https://luma.com/psoyy4k5" target="_blank" rel="noopener noreferrer"><span>Event</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-liminal" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">One policy per arm, one planner on top</h4>
+      <p>Each arm runs its own fine-tuned copy of FLUX.3-Action and knows a handful of short skills. A behavior tree sits above them and decides which skill runs when. This lets the robot chain skills into longer tasks, such as holding a box lid open with one arm while the other picks up objects and places them inside.</p><ul class="prose-points"><li><strong>Robot.</strong> Two SO-101 arms on a 3D-printed station, with an overhead depth camera and a camera on each wrist.</li><li><strong>Skills.</strong> Short skills learned from teleoperated demonstrations. Each one is a small LoRA adapter on top of FLUX.3-Action.</li><li><strong>Planner.</strong> A deterministic behavior tree that reads a task plan and decides which arm runs which skill.</li><li><strong>Checks.</strong> A vision-language model confirms from the camera images that each step really happened, and a safety layer enforces limits and an emergency stop.</li><li><strong>Compute.</strong> All skills were trained in parallel and served from a remote NVIDIA RTX PRO 6000.</li></ul>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/liminal-architecture.png" data-lightbox-caption="A behavior tree coordinates two independently fine-tuned policies, one for each arm." aria-label="View full size: System overview">
+        <img src="assets/media/liminal-architecture.png" alt="A behavior tree coordinates two independently fine-tuned policies, one for each arm." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>System overview:</strong> A behavior tree coordinates two independently fine-tuned policies, one for each arm.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">What we learned about language models in the loop</h4>
+      <p>Following the hybrid-policy experiments in the FLUX.3-Action technical report, we also tried adding a reasoning language model that steps in when a skill fails or meets a case it was not trained for.</p><p>In practice it was too slow. Large reasoning models still respond far more slowly than specialized robot policies, and cost much more to run, which makes recovering from a failure in real time difficult.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/liminal-award-team.jpg" data-lightbox-caption="With Javier, Oscar, and Stanisław and the two-arm robot at DARE Campus, Zurich." aria-label="View full size: Team">
+        <img src="assets/media/liminal-award-team.jpg" alt="With Javier, Oscar, and Stanisław and the two-arm robot at DARE Campus, Zurich." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Team:</strong> With Javier, Oscar, and Stanisław and the two-arm robot at DARE Campus, Zurich.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/liminal-award-team.jpg">
+                        <source src="assets/media/liminal-presentation.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Presentation:</strong> Project presentation and a complete multi-step task on the two-arm robot.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/liminal-vr-rig.jpg">
+                        <source src="assets/media/liminal-vr-teleop.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Teleop:</strong> Collecting demonstrations by teleoperation, then running the learned policy.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/liminal-closeup.jpg" data-lightbox-caption="The 3D-printed two-arm station with an overhead depth camera and wrist cameras." aria-label="View full size: Hardware">
+                      <img src="assets/media/liminal-closeup.jpg" alt="The 3D-printed two-arm station with an overhead depth camera and wrist cameras." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Hardware:</strong> The 3D-printed two-arm station with an overhead depth camera and wrist cameras.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/liminal-vr-rig.jpg" data-lightbox-caption="Recording two-arm demonstrations and testing the policy from a remote machine." aria-label="View full size: Setup">
+                      <img src="assets/media/liminal-vr-rig.jpg" alt="Recording two-arm demonstrations and testing the policy from a remote machine." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Setup:</strong> Recording two-arm demonstrations and testing the policy from a remote machine.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/liminal-kickoff.jpg" data-lightbox-caption="Day one of the Zurich Physical AI Hackathon." aria-label="View full size: Kickoff">
+                      <img src="assets/media/liminal-kickoff.jpg" alt="Day one of the Zurich Physical AI Hackathon." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Kickoff:</strong> Day one of the Zurich Physical AI Hackathon.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-openhumanoid" data-card data-categories="all hackathon hackathon control learning hardware">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="openhumanoid">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/media/profile-g1.jpg" data-autoplay-video aria-label="OpenHumanoid: Commanding a Unitree G1 Humanoid in Natural Language animated video preview">
+              <source src="assets/media/openhumanoid-simone-g1-live.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/openhumanoid/" aria-label="Open full page for OpenHumanoid: Commanding a Unitree G1 Humanoid in Natural Language"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for OpenHumanoid: Commanding a Unitree G1 Humanoid in Natural Language">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="openhumanoid"
+                data-media-type="video"
+                data-media-src="assets/media/openhumanoid-simone-g1-live.mp4"
+                data-media-poster="assets/media/profile-g1.jpg"
+                data-media-caption="Testing whole-body gestures and balance on the Unitree G1 in the ETH hangar."
+                aria-pressed="true"
+                title="G1 Live">
+                ▶ G1 Live
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="openhumanoid"
+                data-media-type="video"
+                data-media-src="assets/media/openhumanoid-preview.mp4"
+                data-media-poster="assets/media/profile-g1.jpg"
+                data-media-caption="The G1 walking and following velocity commands."
+                aria-pressed="false"
+                title="Locomotion">
+                ▶ Locomotion
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="openhumanoid"
+                data-media-type="video"
+                data-media-src="assets/media/openhumanoid-arena.mp4"
+                data-media-poster="assets/media/openhumanoid-ring.jpg"
+                data-media-caption="The final showcase at the end of the 48 hours."
+                aria-pressed="false"
+                title="Arena">
+                ▶ Arena
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="openhumanoid"
+                data-media-type="image"
+                data-media-src="assets/media/profile-g1.jpg"
+                data-media-poster="assets/media/profile-g1.jpg"
+                data-media-caption="Walking next to the G1 during an untethered test."
+                aria-pressed="false"
+                title="Untethered">
+                Untethered
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">ETH Robotics Club HACK2026 · Zurich</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Mar 2026</span>
+          <span class="award-badge">2nd Place</span>
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/openhumanoid/">OpenHumanoid: Commanding a Unitree G1 Humanoid in Natural Language</a>
+        </h3>
+        <p class="work-subtitle">Voice, web, and WhatsApp control of a humanoid robot, built in 48 hours</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong> &amp; Team Zeta</p>
+        <p class="work-summary">Second place at the ETH Robotics Club hackathon. In 48 hours we connected a language-model agent to the whole-body controller of a Unitree G1 humanoid, so the robot can be commanded by voice, from a web page, or over WhatsApp.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>Unitree G1</span><span class="tech-sep" aria-hidden="true">·</span><span>NVIDIA GR00T</span><span class="tech-sep" aria-hidden="true">·</span><span>OpenClaw</span><span class="tech-sep" aria-hidden="true">·</span><span>LiDAR SLAM</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-openhumanoid" data-drawer-toggle="drawer-openhumanoid">
+            <span>Details &amp; Media (4)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/openhumanoid/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili/OpenHumanoid" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-openhumanoid" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">What we delivered</h4>
+      <p>The first tier worked end to end, and it is the system we showed in the live arena demo:</p><ul class="prose-points"><li><strong>Inputs.</strong> Voice, a web page, and WhatsApp.</li><li><strong>Agent.</strong> A fast mode on OpenAI real-time models, which answers in under half a second, and a full mode on an OpenClaw agent.</li><li><strong>Control.</strong> An HTTP bridge passes the agent&#39;s commands to NVIDIA&#39;s GR00T whole-body controller, a neural policy that keeps the robot balanced while it walks and gestures.</li><li><strong>Testing.</strong> Every command was checked in the MuJoCo simulator before it ran on the real Unitree G1.</li></ul>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/openhumanoid-system.png" data-lightbox-caption="Top: the first tier, built and run live on the robot. Bottom: the second tier we planned for mapping, navigation, perception, and manipulation." aria-label="View full size: System overview">
+        <img src="assets/media/openhumanoid-system.png" alt="Top: the first tier, built and run live on the robot. Bottom: the second tier we planned for mapping, navigation, perception, and manipulation." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>System overview:</strong> Top: the first tier, built and run live on the robot. Bottom: the second tier we planned for mapping, navigation, perception, and manipulation.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">What we did not finish</h4>
+      <p>The second tier combined 3D mapping and localization from LiDAR (FAST-LIO and Open3D), path planning, and scene understanding with a vision-language model. The mapping already ran on its own, and we came close to validating the rest, but mounting and integrating an external ZED stereo camera on the robot became the bottleneck just before the deadline.</p><p>Choosing to make a smaller system work reliably, rather than a larger one work partially, paid off in the live demo and earned us second place overall.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/openhumanoid-team-award.jpg" data-lightbox-caption="Team Zeta at the end of HACK2026 in Zurich." aria-label="View full size: Team">
+        <img src="assets/media/openhumanoid-team-award.jpg" alt="Team Zeta at the end of HACK2026 in Zurich." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Team:</strong> Team Zeta at the end of HACK2026 in Zurich.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/profile-g1.jpg">
+                        <source src="assets/media/openhumanoid-simone-g1-live.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>G1 Live:</strong> Testing whole-body gestures and balance on the Unitree G1 in the ETH hangar.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/profile-g1.jpg">
+                        <source src="assets/media/openhumanoid-preview.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Locomotion:</strong> The G1 walking and following velocity commands.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/openhumanoid-ring.jpg">
+                        <source src="assets/media/openhumanoid-arena.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Arena:</strong> The final showcase at the end of the 48 hours.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/profile-g1.jpg" data-lightbox-caption="Walking next to the G1 during an untethered test." aria-label="View full size: Untethered">
+                      <img src="assets/media/profile-g1.jpg" alt="Walking next to the G1 during an untethered test." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Untethered:</strong> Walking next to the G1 during an untethered test.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-nursearm" data-card data-categories="all hackathon hackathon learning hardware">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="nursearm">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/media/nursearm-setup.jpg" data-autoplay-video aria-label="NurseArm: An Assistive Robot Arm for Sorting Medication animated video preview">
+              <source src="assets/media/nursearm-preview.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/nursearm/" aria-label="Open full page for NurseArm: An Assistive Robot Arm for Sorting Medication"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for NurseArm: An Assistive Robot Arm for Sorting Medication">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="nursearm"
+                data-media-type="video"
+                data-media-src="assets/media/nursearm-preview.mp4"
+                data-media-poster="assets/media/nursearm-setup.jpg"
+                data-media-caption="Overhead and wrist camera views while the arm picks up a pill and places it in a cup."
+                aria-pressed="true"
+                title="Rollout">
+                ▶ Rollout
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="nursearm"
+                data-media-type="image"
+                data-media-src="assets/media/nursearm-setup.jpg"
+                data-media-poster="assets/media/nursearm-setup.jpg"
+                data-media-caption="The tabletop setup: overhead camera, robot arm, pill cups, and the second arm used for teleoperation."
+                aria-pressed="false"
+                title="Setup">
+                Setup
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="nursearm"
+                data-media-type="image"
+                data-media-src="assets/media/nursearm-venue.jpg"
+                data-media-poster="assets/media/nursearm-setup.jpg"
+                data-media-caption="Kickoff at the UnternehmerTUM auditorium in Munich."
+                aria-pressed="false"
+                title="Venue">
+                Venue
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">EuroTech × UnternehmerTUM Hackathon · Munich</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Jun 2026</span>
+          
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/nursearm/">NurseArm: An Assistive Robot Arm for Sorting Medication</a>
+        </h3>
+        <p class="work-subtitle">A robot arm that sorts pills on a schedule, and what it taught us about long tasks</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong>, Panagiotis Sarikas, Javier Gil, Miguel Ballesteros Delgado</p>
+        <p class="work-summary">A 48-hour healthcare hackathon project in Munich. A language-model agent schedules medication routines and asks a small robot arm to sort and hand over pills, using skills learned from human demonstrations.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>Imitation Learning (ACT / SmolVLA)</span><span class="tech-sep" aria-hidden="true">·</span><span>MCP</span><span class="tech-sep" aria-hidden="true">·</span><span>SO-101 Arm</span><span class="tech-sep" aria-hidden="true">·</span><span>Teleoperation</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-nursearm" data-drawer-toggle="drawer-nursearm">
+            <span>Details &amp; Media (3)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/nursearm/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili/nursearm" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            <a class="nv-link" href="https://arxiv.org/abs/2506.01844" target="_blank" rel="noopener noreferrer"><span>SmolVLA</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-nursearm" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block">
+      <h4 class="prose-heading">What we built</h4>
+      <ul class="prose-points"><li><strong>Robot.</strong> A six-joint SO-101 arm with one camera above the workspace and one on the wrist.</li><li><strong>Interface.</strong> A web console and voice input.</li><li><strong>Agent.</strong> A language-model agent that calls skills through an MCP server instead of sending motor commands.</li><li><strong>Skills.</strong> Medication routines triggered from a calendar, simple straight-line moves, and policies learned by imitation for sorting pills and handing them over: ACT and SmolVLA, a compact open-source VLA.</li></ul>
+    </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">Collecting the data</h4>
+      <p>We made the physical setup as clean and controlled as we could: an isolated workspace, no background clutter, fixed lighting. Then we stayed up all night and recorded nearly 200 demonstrations, guiding the robot through each one with a second arm that it copies, convinced that a clean setup would be enough for the policy to work.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/nursearm-setup.jpg" data-lightbox-caption="Overhead camera, robot arm, pill cups, and the second arm used to teleoperate it." aria-label="View full size: Setup">
+        <img src="assets/media/nursearm-setup.jpg" alt="Overhead camera, robot arm, pill cups, and the second arm used to teleoperate it." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Setup:</strong> Overhead camera, robot arm, pill cups, and the second arm used to teleoperate it.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">What we learned</h4>
+      <p>It was not enough. When we ran the learned policy, it did not succeed often enough for a reliable live demo.</p><p>Did it need even cleaner data, or was the task simply too long for a single policy without breaking it into steps? In hindsight, probably the second. That open question was the most valuable thing we took home from the weekend.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/nursearm-team.jpg" data-lightbox-caption="With Javier, Miguel, and Panagiotis in Munich, after a night of teleoperation." aria-label="View full size: Team">
+        <img src="assets/media/nursearm-team.jpg" alt="With Javier, Miguel, and Panagiotis in Munich, after a night of teleoperation." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Team:</strong> With Javier, Miguel, and Panagiotis in Munich, after a night of teleoperation.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/nursearm-setup.jpg">
+                        <source src="assets/media/nursearm-preview.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Rollout:</strong> Overhead and wrist camera views while the arm picks up a pill and places it in a cup.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/nursearm-setup.jpg" data-lightbox-caption="The tabletop setup: overhead camera, robot arm, pill cups, and the second arm used for teleoperation." aria-label="View full size: Setup">
+                      <img src="assets/media/nursearm-setup.jpg" alt="The tabletop setup: overhead camera, robot arm, pill cups, and the second arm used for teleoperation." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Setup:</strong> The tabletop setup: overhead camera, robot arm, pill cups, and the second arm used for teleoperation.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/nursearm-venue.jpg" data-lightbox-caption="Kickoff at the UnternehmerTUM auditorium in Munich." aria-label="View full size: Venue">
+                      <img src="assets/media/nursearm-venue.jpg" alt="Kickoff at the UnternehmerTUM auditorium in Munich." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Venue:</strong> Kickoff at the UnternehmerTUM auditorium in Munich.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-samxl-blade-climber" data-card data-categories="all hackathon hackathon control hardware">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="samxl-blade-climber">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/media/samxl-climber.jpg" data-autoplay-video aria-label="A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection animated video preview">
+              <source src="assets/media/samxl-preview.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/samxl-blade-climber/" aria-label="Open full page for A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="samxl-blade-climber"
+                data-media-type="image"
+                data-media-src="assets/media/samxl-climber.jpg"
+                data-media-poster="assets/media/samxl-climber.jpg"
+                data-media-caption="The assembled prototype: laser-cut plates, aluminum arm, pneumatic valves, and controller."
+                aria-pressed="true"
+                title="Prototype">
+                Prototype
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="samxl-blade-climber"
+                data-media-type="image"
+                data-media-src="assets/media/samxl-gait-diagram.png"
+                data-media-poster="assets/media/samxl-climber.jpg"
+                data-media-caption="The four-step climbing cycle with the arm and suction cup."
+                aria-pressed="false"
+                title="Crawling Cycle">
+                Crawling Cycle
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="samxl-blade-climber"
+                data-media-type="image"
+                data-media-src="assets/media/samxl-prototype2.jpg"
+                data-media-poster="assets/media/samxl-climber.jpg"
+                data-media-caption="Top view of the vacuum tubing, valve relays, and the two servo motors."
+                aria-pressed="false"
+                title="Pneumatics">
+                Pneumatics
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="samxl-blade-climber"
+                data-media-type="image"
+                data-media-src="assets/media/samxl-facility.jpg"
+                data-media-poster="assets/media/samxl-climber.jpg"
+                data-media-caption="The full-scale wind-turbine blade in the SAM XL hall at TU Delft."
+                aria-pressed="false"
+                title="Testbed">
+                Testbed
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">RSA Renewable Energy Hackathon · SAM XL, TU Delft</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Oct 2025</span>
+          
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/samxl-blade-climber/">A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection</a>
+        </h3>
+        <p class="work-subtitle">A pneumatic robot that pulls itself up a blade, one anchor point at a time</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong> &amp; Team</p>
+        <p class="work-summary">Built for the RSA Renewable Energy Hackathon at TU Delft. The challenge was to design a pneumatic robot that climbs a wind-turbine blade and reaches as many inspection points as possible during a live demo.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>Mechatronic Design</span><span class="tech-sep" aria-hidden="true">·</span><span>Pneumatics</span><span class="tech-sep" aria-hidden="true">·</span><span>Embedded Control</span><span class="tech-sep" aria-hidden="true">·</span><span>Rapid Prototyping</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-samxl-blade-climber" data-drawer-toggle="drawer-samxl-blade-climber">
+            <span>Details &amp; Media (4)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/samxl-blade-climber/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-samxl-blade-climber" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block prose-with-figure prose-figure-wide">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">How it climbs</h4>
+      <p>The arm reaches up and its suction cup grips the blade. Using that grip as a fixed pivot, the robot pulls its body upward past the anchor point. The body then locks onto the surface, the arm lets go, swings above the body, grips again, and the cycle repeats.</p><p>We built the prototype from laser-cut plates and an aluminum arm driven by two servo motors. A bank of relay-switched valves controls the vacuum, and an embedded controller runs the sequence.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/samxl-gait-diagram.png" data-lightbox-caption="Anchor the suction cup, pull the body up, lock the body, swing the arm to the next point." aria-label="View full size: Climbing cycle">
+        <img src="assets/media/samxl-gait-diagram.png" alt="Anchor the suction cup, pull the body up, lock the body, swing the arm to the next point." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Climbing cycle:</strong> Anchor the suction cup, pull the body up, lock the body, swing the arm to the next point.</figcaption>
+    </figure>
+  </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">What we learned</h4>
+      <p>The concept was promising, but turning it into a reliable prototype in 48 hours was much harder than we expected. Vacuum sealing, valve timing, and the stiffness of the arm all had to work at the same time. Building a complete pneumatic and mechanical system from scratch was still a valuable hands-on lesson.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/samxl-cad.png" data-lightbox-caption="The arm anchored to the surface by its suction cup, with the body below it." aria-label="View full size: Concept sketch">
+        <img src="assets/media/samxl-cad.png" alt="The arm anchored to the surface by its suction cup, with the body below it." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Concept sketch:</strong> The arm anchored to the surface by its suction cup, with the body below it.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/samxl-climber.jpg" data-lightbox-caption="The assembled prototype: laser-cut plates, aluminum arm, pneumatic valves, and controller." aria-label="View full size: Prototype">
+                      <img src="assets/media/samxl-climber.jpg" alt="The assembled prototype: laser-cut plates, aluminum arm, pneumatic valves, and controller." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Prototype:</strong> The assembled prototype: laser-cut plates, aluminum arm, pneumatic valves, and controller.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/samxl-gait-diagram.png" data-lightbox-caption="The four-step climbing cycle with the arm and suction cup." aria-label="View full size: Crawling Cycle">
+                      <img src="assets/media/samxl-gait-diagram.png" alt="The four-step climbing cycle with the arm and suction cup." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Crawling Cycle:</strong> The four-step climbing cycle with the arm and suction cup.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/samxl-prototype2.jpg" data-lightbox-caption="Top view of the vacuum tubing, valve relays, and the two servo motors." aria-label="View full size: Pneumatics">
+                      <img src="assets/media/samxl-prototype2.jpg" alt="Top view of the vacuum tubing, valve relays, and the two servo motors." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Pneumatics:</strong> Top view of the vacuum tubing, valve relays, and the two servo motors.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/samxl-facility.jpg" data-lightbox-caption="The full-scale wind-turbine blade in the SAM XL hall at TU Delft." aria-label="View full size: Testbed">
+                      <img src="assets/media/samxl-facility.jpg" alt="The full-scale wind-turbine blade in the SAM XL hall at TU Delft." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Testbed:</strong> The full-scale wind-turbine blade in the SAM XL hall at TU Delft.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article><article class="work-card reveal-item" id="card-moneyheister-amr" data-card data-categories="all hackathon hackathon hardware">
+    <div class="work-card-main">
+      <div class="work-media-col">
+        <div class="work-media-frame" data-media-frame="moneyheister-amr">
+          
+            <video class="work-video-preview" muted loop playsinline preload="metadata" poster="assets/media/profile-builder.jpg" data-autoplay-video aria-label="A Package-Carrying Robot for a Competitive Arena animated video preview">
+              <source src="assets/media/rsa-intro-preview.mp4" type="video/mp4">
+            </video>
+          
+          <a class="media-overlay-link" href="work/moneyheister-amr/" aria-label="Open full page for A Package-Carrying Robot for a Competitive Arena"></a>
+        </div>
+        
+          <div class="mini-gallery-bar" role="group" aria-label="Switch media preview for A Package-Carrying Robot for a Competitive Arena">
+            
+              <button type="button" class="mini-media-btn is-active"
+                data-switch-media="moneyheister-amr"
+                data-media-type="video"
+                data-media-src="assets/media/rsa-intro-preview.mp4"
+                data-media-poster="assets/media/profile-builder.jpg"
+                data-media-caption="Driving the remote-controlled robot in a TU Delft hallway."
+                aria-pressed="true"
+                title="Drive Test">
+                ▶ Drive Test
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="moneyheister-amr"
+                data-media-type="video"
+                data-media-src="assets/media/rsa-intro-mechanism.mp4"
+                data-media-poster="assets/media/profile-builder.jpg"
+                data-media-caption="Bench test of the 3D-printed gear lift."
+                aria-pressed="false"
+                title="Mechanism">
+                ▶ Mechanism
+              </button>
+            
+              <button type="button" class="mini-media-btn "
+                data-switch-media="moneyheister-amr"
+                data-media-type="image"
+                data-media-src="assets/media/profile-builder.jpg"
+                data-media-poster="assets/media/profile-builder.jpg"
+                data-media-caption="Wiring and testing the chassis and motor drivers."
+                aria-pressed="false"
+                title="Assembly">
+                Assembly
+              </button>
+            
+          </div>
+        
+      </div>
+
+      <div class="work-info-col">
+        <div class="work-meta-top">
+          <span class="work-institution">RSA Hackathon · TU Delft</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span class="work-period">Sep 2025</span>
+          
+        </div>
+
+        <h3 class="work-title">
+          <a href="work/moneyheister-amr/">A Package-Carrying Robot for a Competitive Arena</a>
+        </h3>
+        <p class="work-subtitle">My first hackathon: a remote-controlled robot that collects, protects, and delivers packages</p>
+        <p class="work-authors"><strong class="author-self">Simone Utili</strong> &amp; Team</p>
+        <p class="work-summary">My first hackathon at TU Delft. We built a remote-controlled robot that collects packages from a dropper, shields them inside its chassis from rival robots, and lifts them into a receiver.</p>
+
+        <p class="work-tech-line" aria-label="Technologies">
+          <span>3D-Printed Gear Lift</span><span class="tech-sep" aria-hidden="true">·</span><span>Laser-Cut Chassis</span><span class="tech-sep" aria-hidden="true">·</span><span>Differential Drive</span><span class="tech-sep" aria-hidden="true">·</span><span>Rapid Prototyping</span>
+        </p>
+
+        <div class="work-actions">
+          <button type="button" class="drawer-toggle-btn" aria-expanded="false" aria-controls="drawer-moneyheister-amr" data-drawer-toggle="drawer-moneyheister-amr">
+            <span>Details &amp; Media (3)</span>
+            <svg class="icon chevron-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="work-links-inline">
+            <a class="nv-link" href="work/moneyheister-amr/"><span>Project Page</span><svg class="icon icon-chevron-right" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>Code</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-drawer" id="drawer-moneyheister-amr" hidden>
+      <div class="drawer-inner">
+        <div class="drawer-prose">
+          <div class="prose-block">
+      <h4 class="prose-heading">The design</h4>
+      <p>We built a laser-cut, differential-drive chassis around an internal lift made of 3D-printed gears. The package stays enclosed inside the robot while it drives and is then raised up to the receiver. A horizontal arm on the outside keeps opposing robots at a distance.</p>
+    </div><div class="prose-block prose-with-figure prose-figure-side">
+    <div class="prose-text-col">
+      <h4 class="prose-heading">What I took from it</h4>
+      <p>This was my first hackathon, and it stays close to my heart. Beyond designing the gears and wiring the drive base, it is where I first learned to work against the clock in a team and deliver a working robot by a hard deadline.</p>
+    </div>
+    <figure class="prose-inline-figure">
+      <button type="button" class="prose-figure-btn" data-lightbox-src="assets/media/rsa-intro-team.jpg" data-lightbox-caption="Planning the mechanical layout with the team." aria-label="View full size: Team">
+        <img src="assets/media/rsa-intro-team.jpg" alt="Planning the mechanical layout with the team." loading="lazy" width="760" height="440">
+      </button>
+      <figcaption><strong>Team:</strong> Planning the mechanical layout with the team.</figcaption>
+    </figure>
+  </div>
+        </div>
+
+        
+          <div class="drawer-gallery">
+            <h4 class="drawer-gallery-title">Media Gallery</h4>
+            <div class="drawer-gallery-grid">
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/profile-builder.jpg">
+                        <source src="assets/media/rsa-intro-preview.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Drive Test:</strong> Driving the remote-controlled robot in a TU Delft hallway.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <div class="drawer-video-wrap">
+                      <video controls playsinline preload="metadata" poster="assets/media/profile-builder.jpg">
+                        <source src="assets/media/rsa-intro-mechanism.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  
+                  <figcaption>
+                    <strong>Mechanism:</strong> Bench test of the 3D-printed gear lift.
+                  </figcaption>
+                </figure>
+              
+                <figure class="drawer-media-item">
+                  
+                    <button type="button" class="drawer-img-btn" data-lightbox-src="assets/media/profile-builder.jpg" data-lightbox-caption="Wiring and testing the chassis and motor drivers." aria-label="View full size: Assembly">
+                      <img src="assets/media/profile-builder.jpg" alt="Wiring and testing the chassis and motor drivers." loading="lazy" width="480" height="300">
+                    </button>
+                  
+                  <figcaption>
+                    <strong>Assembly:</strong> Wiring and testing the chassis and motor drivers.
+                  </figcaption>
+                </figure>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </article>
+      </div>
+    </section>
+
+    <!-- SECTION 4: EXPERIENCE & EDUCATION -->
+    <section class="work-section container" id="experience" aria-labelledby="experience-title">
+      <div class="section-header reveal-item">
+        <div>
+          <p class="nv-kicker">Background</p>
+          <h2 id="experience-title">Experience &amp; Education</h2>
+        </div>
+        <a class="nv-link" href="documents/simone-utili-cv.pdf" download><span>Download CV (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="exp-edu-grid">
+        <div class="exp-col">
+          <h3 class="sub-heading">Experience</h3>
+          <div class="timeline-list">
+            
+              <article class="timeline-card reveal-item">
+                <div class="timeline-top">
+                  <span class="timeline-period">May 2026 – Present</span>
+                  <span class="timeline-loc">Brussels, Belgium / Remote</span>
+                </div>
+                <h4 class="timeline-role">Embodied AI Engineer</h4>
+                <p class="timeline-org"><strong>Motion1</strong> · <span>Humanoid Robot Deployment Startup</span></p>
+                <p class="timeline-desc">Developing the VLA training and RL fine-tuning stack for Unitree G1 and AgiBot G2 humanoids, combining physical and visual simulation data augmentation. Architecting modular Physical AI pipelines over open-source frameworks for agentic 3DGS digital twin reconstruction, Real2Sim dexterous skill transfer from egocentric video, and SLAM-based hand-object tracking and semantic action annotation.</p>
+                <p class="work-tech-line">
+                  <span>VLA &amp; RL Fine-Tuning</span><span class="tech-sep" aria-hidden="true">·</span><span>Sim Data Augmentation</span><span class="tech-sep" aria-hidden="true">·</span><span>Real2Sim &amp; 3DGS</span><span class="tech-sep" aria-hidden="true">·</span><span>Egocentric Data Pipelines</span>
+                </p>
+              </article>
+            
+              <article class="timeline-card reveal-item">
+                <div class="timeline-top">
+                  <span class="timeline-period">Jul – Dec 2025</span>
+                  <span class="timeline-loc">Emilia-Romagna, Italy</span>
+                </div>
+                <h4 class="timeline-role">Collaborative Robotics Research Analyst</h4>
+                <p class="timeline-org"><strong>Clust-ER MECH</strong> · <span>Mechatronics &amp; Robotics Innovation Cluster</span></p>
+                <p class="timeline-desc">Co-authored the regional white paper &quot;La Robotica Collaborativa in Emilia-Romagna&quot;, analyzing industrial cobot adoption, safety standards, and vision integration across manufacturing enterprises and research labs in Emilia-Romagna, Italy.</p>
+                <p class="work-tech-line">
+                  <span>Collaborative Robotics</span><span class="tech-sep" aria-hidden="true">·</span><span>Industrial Automation</span><span class="tech-sep" aria-hidden="true">·</span><span>Research Analysis</span>
+                </p>
+              </article>
+            
+              <article class="timeline-card reveal-item">
+                <div class="timeline-top">
+                  <span class="timeline-period">Mar – Jun 2024</span>
+                  <span class="timeline-loc">Bologna, Italy</span>
+                </div>
+                <h4 class="timeline-role">Simulation Robotics Engineer (Intern)</h4>
+                <p class="timeline-org"><strong>Laboratory of Automation and Robotics (LAR)</strong> · <span>University of Bologna</span></p>
+                <p class="timeline-desc">Controlled a robotic manipulator in NVIDIA Isaac Sim for pick-and-place tasks, implementing RMPFlow motion generation and collision avoidance via Omniverse APIs.</p>
+                <p class="work-tech-line">
+                  <span>NVIDIA Isaac Sim</span><span class="tech-sep" aria-hidden="true">·</span><span>RMPFlow</span><span class="tech-sep" aria-hidden="true">·</span><span>Motion Generation</span><span class="tech-sep" aria-hidden="true">·</span><span>Collision Avoidance</span>
+                </p>
+              </article>
+            
+          </div>
+        </div>
+
+        <div class="edu-col">
+          <h3 class="sub-heading">Education</h3>
+          <div class="timeline-list">
+            
+              <article class="timeline-card reveal-item">
+                <div class="timeline-top">
+                  <span class="timeline-period">2025 – Present</span>
+                  <span class="timeline-loc">Delft, Netherlands</span>
+                </div>
+                <h4 class="timeline-role">MSc in Robotics</h4>
+                <p class="timeline-org"><strong>Delft University of Technology (TU Delft)</strong></p>
+                <p class="timeline-desc">Focus on intelligent control systems, reinforcement learning, motion planning and control, human–robot interaction, and physical AI.</p>
+                
+                  <p class="work-tech-line">
+                    <span>Planning &amp; Decision Making</span><span class="tech-sep" aria-hidden="true">·</span><span>Control in Human–Robot Interaction</span><span class="tech-sep" aria-hidden="true">·</span><span>Machine Learning for Robotics</span><span class="tech-sep" aria-hidden="true">·</span><span>Robot Dynamics &amp; Control</span>
+                  </p>
+                
+              </article>
+            
+              <article class="timeline-card reveal-item">
+                <div class="timeline-top">
+                  <span class="timeline-period">2021 – 2025</span>
+                  <span class="timeline-loc">Bologna, Italy</span>
+                </div>
+                <h4 class="timeline-role">BSc in Automation Engineering</h4>
+                <p class="timeline-org"><strong>University of Bologna</strong></p>
+                <p class="timeline-desc">Thesis at LAR: &quot;Reinforcement Learning Calibration of a Robotic Manipulator Digital Twin in NVIDIA Isaac Sim&quot; (Supervisors: Prof. G. Palli, A. Govoni).</p>
+                
+                  <p class="work-tech-line">
+                    <span>Automatic Control</span><span class="tech-sep" aria-hidden="true">·</span><span>Nonlinear Systems</span><span class="tech-sep" aria-hidden="true">·</span><span>Robotics &amp; Industrial Automation</span><span class="tech-sep" aria-hidden="true">·</span><span>Optimization</span>
+                  </p>
+                
+              </article>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio">
+          <p class="footer-name">Simone Utili</p>
+          <p class="footer-tagline">MSc Robotics · TU Delft · Delft, Netherlands</p>
+        </div>
+        <div class="footer-links-col">
+          <a class="nv-link" href="mailto:simoutili@gmail.com"><span>simoutili@gmail.com</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="footer-pills">
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://www.linkedin.com/in/simone-utili-372916166/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE AIM 2026</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="documents/simone-utili-cv.pdf" download><span>CV (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Simone Utili · Delft, Netherlands</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="media-lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close media viewer">✕ Close</button>
+      <div class="lightbox-stage" id="lightbox-stage"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

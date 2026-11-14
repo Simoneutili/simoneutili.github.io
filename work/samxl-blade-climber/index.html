@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" id="top" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection · Simone Utili</title>
+  <meta name="description" content="Built for the RSA Renewable Energy Hackathon at TU Delft. The challenge was to design a pneumatic robot that climbs a wind-turbine blade and reaches as many inspection points as possible during a live demo.">
+  <meta property="og:title" content="A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection · Simone Utili">
+  <meta property="og:description" content="Built for the RSA Renewable Energy Hackathon at TU Delft. The challenge was to design a pneumatic robot that climbs a wind-turbine blade and reaches as many inspection points as possible during a live demo.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://simoneutili.github.io/assets/media/liminal-award-team.jpg">
+  <meta name="author" content="Simone Utili">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../../assets/fonts/sf-pro-display-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/sf-pro-text-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){try{var q=new URLSearchParams(window.location.search).get('theme');var saved=localStorage.getItem('su-theme');var t=(q==='dark'||q==='light')?q:(saved==='dark'?'dark':'light');document.documentElement.dataset.theme=t;document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../main.js" defer></script>
+</head>
+<body class="paper-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a class="wordmark" href="../../index.html" aria-label="Simone Utili home">
+        <span class="wordmark-name">Simone Utili</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Section navigation">
+        <a href="../../index.html#about" data-section-link="about">About</a>
+        <a href="../../index.html#projects" data-section-link="projects">Research</a>
+        <a href="../../index.html#publications" data-section-link="publications">Publications</a>
+        <a href="../../index.html#hackathons" data-section-link="hackathons">Hackathons</a>
+        <a href="../../index.html#experience" data-section-link="experience">Experience</a>
+        <a class="nav-cv" href="../../documents/simone-utili-cv.pdf" target="_blank" rel="noopener">CV<svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme" title="Toggle light / dark mode">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="theme-toggle-label" data-theme-label>Light</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>
+          <span>Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main"><article class="paper paper-story">
+      <header class="paper-header">
+        <a class="back-link" href="../../index.html#hackathons">← All hackathons</a>
+        <p class="paper-venue">
+          <span>RSA Renewable Energy Hackathon · SAM XL, TU Delft</span>
+          <span class="work-meta-dot" aria-hidden="true">·</span>
+          <span>Oct 2025</span>
+          
+        </p>
+        <h1>A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection</h1>
+        <p class="paper-tagline">A pneumatic robot that pulls itself up a blade, one anchor point at a time</p>
+        <p class="paper-authors"><strong class="author-self">Simone Utili</strong> &amp; Team</p>
+        <div class="paper-links"><a class="paper-btn" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg><span>Code</span></a></div>
+      </header>
+
+      <figure class="paper-teaser">
+        
+          <video controls autoplay muted loop playsinline preload="metadata" poster="../../assets/media/samxl-climber.jpg" aria-label="A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection demonstration video">
+            <source src="../../assets/media/samxl-preview.mp4" type="video/mp4">
+          </video>
+        
+        <figcaption>The prototype, the concept sketch, and the full-scale blade used for testing.</figcaption>
+      </figure>
+
+      <section class="paper-section">
+        <div class="paper-text">
+          
+          <p>The hackathon set a fixed challenge: build a pneumatic robot that can climb a composite wind-turbine blade and visit as many inspection points as possible during a live demonstration.</p><p>Our concept was a robot that crawls up the blade using an arm with a suction cup at its tip.</p>
+          <ul class="paper-tags" aria-label="Methods and tools">
+            <li>Mechatronic Design</li><li>Pneumatics</li><li>Embedded Control</li><li>Rapid Prototyping</li>
+          </ul>
+        </div>
+      </section>
+
+      
+
+      <section class="paper-section">
+    <div class="paper-text">
+      <h2>How it climbs</h2>
+      
+      <p>The arm reaches up and its suction cup grips the blade. Using that grip as a fixed pivot, the robot pulls its body upward past the anchor point. The body then locks onto the surface, the arm lets go, swings above the body, grips again, and the cycle repeats.</p><p>We built the prototype from laser-cut plates and an aluminum arm driven by two servo motors. A bank of relay-switched valves controls the vacuum, and an embedded controller runs the sequence.</p>
+    </div>
+    <figure class="paper-figure paper-figure-wide">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/samxl-gait-diagram.png" data-lightbox-caption="Anchor the suction cup, pull the body up, lock the body, swing the arm to the next point." aria-label="View full size: Climbing cycle">
+      <img src="../../assets/media/samxl-gait-diagram.png" alt="Anchor the suction cup, pull the body up, lock the body, swing the arm to the next point." loading="lazy">
+    </button>
+    <figcaption><strong>Climbing cycle.</strong> Anchor the suction cup, pull the body up, lock the body, swing the arm to the next point.</figcaption>
+  </figure>
+    
+  </section><section class="paper-section">
+    <div class="paper-text has-aside">
+      <h2>What we learned</h2>
+      <figure class="paper-figure paper-figure-medium">
+    <button type="button" class="paper-figure-btn" data-lightbox-src="../../assets/media/samxl-cad.png" data-lightbox-caption="The arm anchored to the surface by its suction cup, with the body below it." aria-label="View full size: Concept sketch">
+      <img src="../../assets/media/samxl-cad.png" alt="The arm anchored to the surface by its suction cup, with the body below it." loading="lazy">
+    </button>
+    <figcaption><strong>Concept sketch.</strong> The arm anchored to the surface by its suction cup, with the body below it.</figcaption>
+  </figure>
+      <p>The concept was promising, but turning it into a reliable prototype in 48 hours was much harder than we expected. Vacuum sealing, valve timing, and the stiffness of the arm all had to work at the same time. Building a complete pneumatic and mechanical system from scratch was still a valuable hands-on lesson.</p>
+    </div>
+    
+    
+  </section>
+
+      
+        <section class="paper-section">
+          <div class="paper-text"><h2>Photos and clips</h2></div>
+          <div class="paper-gallery paper-gallery-few">
+            <figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <button type="button" class="paper-gallery-btn" data-lightbox-src="../../assets/media/samxl-prototype2.jpg" data-lightbox-caption="Top view of the vacuum tubing, valve relays, and the two servo motors." aria-label="View full size: Pneumatics">
+      <img src="../../assets/media/samxl-prototype2.jpg" alt="Top view of the vacuum tubing, valve relays, and the two servo motors." loading="lazy">
+    </button></div>
+    <figcaption><strong>Pneumatics.</strong> Top view of the vacuum tubing, valve relays, and the two servo motors.</figcaption>
+  </figure><figure class="paper-gallery-item">
+    <div class="paper-gallery-media">
+    <button type="button" class="paper-gallery-btn" data-lightbox-src="../../assets/media/samxl-facility.jpg" data-lightbox-caption="The full-scale wind-turbine blade in the SAM XL hall at TU Delft." aria-label="View full size: Testbed">
+      <img src="../../assets/media/samxl-facility.jpg" alt="The full-scale wind-turbine blade in the SAM XL hall at TU Delft." loading="lazy">
+    </button></div>
+    <figcaption><strong>Testbed.</strong> The full-scale wind-turbine blade in the SAM XL hall at TU Delft.</figcaption>
+  </figure>
+          </div>
+        </section>
+      
+
+      
+
+      <nav class="paper-pager" aria-label="More hackathons">
+        <a href="../nursearm/"><span>← Previous</span><strong>NurseArm: An Assistive Robot Arm for Sorting Medication</strong></a>
+        <a href="../moneyheister-amr/"><span>Next →</span><strong>A Package-Carrying Robot for a Competitive Arena</strong></a>
+      </nav>
+    </article></main>
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio">
+          <p class="footer-name">Simone Utili</p>
+          <p class="footer-tagline">MSc Robotics · TU Delft · Delft, Netherlands</p>
+        </div>
+        <div class="footer-links-col">
+          <a class="nv-link" href="mailto:simoutili@gmail.com"><span>simoutili@gmail.com</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <div class="footer-pills">
+            <a class="nv-link" href="https://github.com/Simoneutili" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://www.linkedin.com/in/simone-utili-372916166/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="https://doi.org/10.1109/AIM65483.2026.11658146" target="_blank" rel="noopener noreferrer"><span>IEEE AIM 2026</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="nv-link" href="../../documents/simone-utili-cv.pdf" download><span>CV (PDF)</span><svg class="icon icon-ext" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Simone Utili · Delft, Netherlands</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+  <div class="lightbox" id="media-lightbox" role="dialog" aria-modal="true" aria-label="Media viewer" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close media viewer">✕ Close</button>
+      <div class="lightbox-stage" id="lightbox-stage"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
