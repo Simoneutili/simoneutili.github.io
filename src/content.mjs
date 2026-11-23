@@ -62,7 +62,6 @@ export const projects = [
   {
     slug: 'liminal',
     category: 'hackathon',
-    filterTags: ['hackathon', 'learning', 'hardware'],
     title: 'Liminal: Long-Horizon Bimanual Manipulation with FLUX.3-Action',
     subtitle: 'Two robot arms, one learned policy each, and a simple planner that makes them work together',
     period: 'Oct 2026',
@@ -133,7 +132,6 @@ export const projects = [
   {
     slug: 'openhumanoid',
     category: 'hackathon',
-    filterTags: ['hackathon', 'control', 'learning', 'hardware'],
     title: 'OpenHumanoid: Commanding a Unitree G1 Humanoid in Natural Language',
     subtitle: 'Voice, web, and WhatsApp control of a humanoid robot, built in 48 hours',
     period: 'Mar 2026',
@@ -197,7 +195,6 @@ export const projects = [
   {
     slug: 'nursearm',
     category: 'hackathon',
-    filterTags: ['hackathon', 'learning', 'hardware'],
     title: 'NurseArm: An Assistive Robot Arm for Sorting Medication',
     subtitle: 'A robot arm that sorts pills on a schedule, and what it taught us about long tasks',
     period: 'Jun 2026',
@@ -267,7 +264,6 @@ export const projects = [
   {
     slug: 'samxl-blade-climber',
     category: 'hackathon',
-    filterTags: ['hackathon', 'control', 'hardware'],
     title: 'A Suction-Cup Climbing Robot for Wind-Turbine Blade Inspection',
     subtitle: 'A pneumatic robot that pulls itself up a blade, one anchor point at a time',
     period: 'Oct 2025',
@@ -325,7 +321,6 @@ export const projects = [
   {
     slug: 'moneyheister-amr',
     category: 'hackathon',
-    filterTags: ['hackathon', 'hardware'],
     title: 'A Package-Carrying Robot for a Competitive Arena',
     subtitle: 'My first hackathon: a remote-controlled robot that collects, protects, and delivers packages',
     period: 'Sep 2025',
@@ -371,7 +366,6 @@ export const projects = [
   {
     slug: 'real2sim',
     category: 'research',
-    filterTags: ['research', 'control', 'learning'],
     title: 'Online Real2Sim Calibration of Velocity-Controlled Digital Twins via Reinforcement Learning',
     subtitle: 'Teaching a simulated robot arm to move like the real one',
     period: '2024 – 2026',
@@ -472,7 +466,6 @@ export const projects = [
   {
     slug: 'photosyntech',
     category: 'research',
-    filterTags: ['research', 'control', 'hardware'],
     title: 'Photosyntech: Autonomous Greenhouse Mobile Manipulator',
     subtitle: 'A mobile robot that patrols a greenhouse, inspects each planter, and removes dead flowers',
     period: 'May – Jun 2026',
@@ -566,7 +559,6 @@ export const projects = [
   {
     slug: 'haptic-teaching',
     category: 'research',
-    filterTags: ['research', 'control', 'learning'],
     title: 'Haptic Guidance Strategies for Teleoperation-Based Learning from Demonstration',
     subtitle: 'Does force feedback help people teach robots better? A user study with 20 participants',
     period: 'Feb – Mar 2026',
@@ -646,7 +638,6 @@ export const projects = [
   {
     slug: 'mobile-manipulator',
     category: 'research',
-    filterTags: ['research', 'control'],
     title: 'Whole-Body Motion Planning & MPC for a Bartender Mobile Manipulator',
     subtitle: 'When does a robot need a global plan, and when is a local controller enough?',
     period: 'Nov 2025 – Jan 2026',

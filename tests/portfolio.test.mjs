@@ -46,7 +46,7 @@ test('all generated pages have usable navigation, accessible images, looping vid
   }
 
   const homeDoc = documents.get('index.html');
-  const cards = homeDoc.querySelectorAll('[data-card]');
+  const cards = homeDoc.querySelectorAll('article.work-card');
   assert.equal(cards.length, projects.length, 'Every hackathon and research project renders as an interactive card');
   for (const card of cards) {
     assert.ok(card.querySelector('video[data-autoplay-video]'), `Card ${card.id} has an animated video preview`);
@@ -113,27 +113,13 @@ test('hero portrait switcher cycles through personal robotics photographs', asyn
   assert.equal(thumbs[0].getAttribute('aria-pressed'), 'false');
 });
 
-test('category filter toolbar filters hackathons, research projects, and domain tags', async () => {
+test('homepage shows every project without the filter toolbar or research summary paragraph', async () => {
   const { document } = await interactive();
-  const allCards = [...document.querySelectorAll('[data-card]')];
-  const controlBtn = document.querySelector('[data-filter="control"]');
-  const researchBtn = document.querySelector('[data-filter="research"]');
-  const allBtn = document.querySelector('[data-filter="all"]');
-
-  controlBtn.click();
-  const visibleControl = allCards.filter(c => !c.hidden);
-  assert.ok(visibleControl.length >= 4);
-  assert.equal(controlBtn.getAttribute('aria-pressed'), 'true');
-
-  researchBtn.click();
-  const hackathonSection = document.querySelector('[data-work-section="hackathon"]');
-  const researchSection = document.querySelector('[data-work-section="research"]');
-  assert.equal(hackathonSection.hidden, true);
-  assert.equal(researchSection.hidden, false);
-
-  allBtn.click();
-  assert.equal(allCards.filter(c => !c.hidden).length, projects.length);
-  assert.equal(hackathonSection.hidden, false);
+  assert.equal(document.querySelector('[data-filter]'), null);
+  assert.equal(document.querySelector('#projects .section-desc'), null);
+  assert.ok(document.querySelector('#projects #work'));
+  assert.ok(document.querySelector('#hackathons .section-desc'));
+  assert.equal(document.querySelectorAll('#projects:not([hidden]) .work-card:not([hidden]), #hackathons:not([hidden]) .work-card:not([hidden])').length, projects.length);
 });
 
 test('card inline drawers, mini media switcher, and lightbox modal operate interactively', async () => {

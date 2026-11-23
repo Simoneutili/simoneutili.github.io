@@ -86,38 +86,7 @@ if (portraitStageImg && portraitButtons.length) {
   });
 }
 
-// 4. Category Filter Toolbar
-const filterButtons = [...document.querySelectorAll('.filter-btn[data-filter]')];
-const workCards = [...document.querySelectorAll('[data-card]')];
-const workSections = [...document.querySelectorAll('[data-work-section]')];
-
-function setCategoryFilter(filter = 'all') {
-  filterButtons.forEach(btn => {
-    const active = btn.getAttribute('data-filter') === filter;
-    btn.classList.toggle('is-active', active);
-    btn.setAttribute('aria-pressed', String(active));
-  });
-
-  workCards.forEach(card => {
-    const categories = (card.getAttribute('data-categories') || '').split(/\s+/);
-    const matches = filter === 'all' || categories.includes(filter);
-    card.hidden = !matches;
-  });
-
-  workSections.forEach(section => {
-    const cardsInSection = [...section.querySelectorAll('[data-card]')];
-    const hasVisible = cardsInSection.some(card => !card.hidden);
-    section.hidden = !hasVisible;
-  });
-}
-
-filterButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    setCategoryFilter(btn.getAttribute('data-filter') || 'all');
-  });
-});
-
-// 5. Card Mini Media Switcher (Video / Photo preview toggle on each card)
+// 4. Card Mini Media Switcher (Video / Photo preview toggle on each card)
 document.querySelectorAll('[data-switch-media]').forEach(btn => {
   btn.addEventListener('click', () => {
     const slug = btn.getAttribute('data-switch-media');
@@ -161,7 +130,7 @@ document.querySelectorAll('[data-switch-media]').forEach(btn => {
   });
 });
 
-// 6. Inline Expandable Drawers (Project Technical Breakdown & Media Gallery + BibTeX)
+// 5. Inline Expandable Drawers (Project Technical Breakdown & Media Gallery + BibTeX)
 function bindDrawerToggles(attr) {
   document.querySelectorAll(`[${attr}]`).forEach(btn => {
     btn.addEventListener('click', () => {
@@ -178,7 +147,7 @@ function bindDrawerToggles(attr) {
 bindDrawerToggles('data-drawer-toggle');
 bindDrawerToggles('data-bibtex-toggle');
 
-// 7. Lightbox Modal for Gallery Images
+// 6. Lightbox Modal for Gallery Images
 const lightbox = document.getElementById('media-lightbox');
 const lightboxStage = document.getElementById('lightbox-stage');
 const lightboxCaption = document.getElementById('lightbox-caption');
@@ -209,7 +178,7 @@ if (lightbox && lightboxStage) {
   });
 }
 
-// 8. Toast Notification & Copy Citation Reference
+// 7. Toast Notification & Copy Citation Reference
 let toastTimer;
 function notify(message) {
   const toast = document.querySelector('.toast');
@@ -244,7 +213,7 @@ document.querySelectorAll('.copy-reference').forEach(button => {
   });
 });
 
-// 9. Viewport Autoplay for Videos, Reveal Observer, Scroll-Linked Bento Motion & Scroll-Spy
+// 8. Viewport Autoplay for Videos, Reveal Observer, Scroll-Linked Bento Motion & Scroll-Spy
 const revealItems = [...document.querySelectorAll('.reveal-item')];
 const motionCards = [...document.querySelectorAll('.work-card, .pub-card, .timeline-card, .portrait-bento, .status-bento')];
 const prefersReducedMotion = Boolean(

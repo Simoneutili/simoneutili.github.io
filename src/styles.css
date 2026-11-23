@@ -747,49 +747,6 @@ button {
 }
 
 /* ==========================================================================
-   Apple Segmented Filter Control
-   ========================================================================== */
-
-.filter-toolbar-section {
-  padding-top: 2rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.segmented-control {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 0.2rem;
-  padding: 0.28rem;
-  border-radius: 999px;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border);
-}
-
-.filter-btn {
-  padding: 0.38rem 0.88rem;
-  border-radius: 999px;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: color 0.18s var(--ease-smooth), background-color 0.2s var(--ease-smooth), box-shadow 0.2s var(--ease-smooth);
-}
-
-.filter-btn:hover {
-  color: var(--ink);
-}
-
-.filter-btn.is-active {
-  background: var(--bg-elevated);
-  color: var(--ink);
-  font-weight: 600;
-  box-shadow: var(--shadow-pill);
-}
-
-/* ==========================================================================
    Sections & Apple × NVIDIA Bento Cards (`work-card`)
    ========================================================================== */
 

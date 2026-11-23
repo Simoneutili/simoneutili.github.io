@@ -172,10 +172,9 @@ function documentShell({ title, description, prefix = '', body, home = false, bo
 function renderExperienceCard(p, prefix = '') {
   const galleryItems = p.gallery || [];
   const hasVideo = Boolean(p.videoPreview);
-  const filterTokens = ['all', p.category, ...(p.filterTags || [])].join(' ');
   const drawerId = `drawer-${p.slug}`;
 
-  return `<article class="work-card reveal-item" id="card-${e(p.slug)}" data-card data-categories="${e(filterTokens)}">
+  return `<article class="work-card reveal-item" id="card-${e(p.slug)}">
     <div class="work-card-main">
       <div class="work-media-col">
         <div class="work-media-frame" data-media-frame="${e(p.slug)}">
@@ -420,26 +419,13 @@ export function renderHome() {
       ` : ''}
     </section>
 
-    <!-- SEGMENTED FILTER CONTROL -->
-    <section class="filter-toolbar-section container" id="work" aria-label="Filter research and hackathons">
-      <div class="segmented-control" role="toolbar" aria-label="Category filter">
-        <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All (${projects.length})</button>
-        <button type="button" class="filter-btn" data-filter="research" aria-pressed="false">Research (${researchItems.length})</button>
-        <button type="button" class="filter-btn" data-filter="hackathon" aria-pressed="false">Hackathons (${hackathonItems.length})</button>
-        <button type="button" class="filter-btn" data-filter="control" aria-pressed="false">Control &amp; Planning</button>
-        <button type="button" class="filter-btn" data-filter="learning" aria-pressed="false">RL &amp; Learning</button>
-        <button type="button" class="filter-btn" data-filter="hardware" aria-pressed="false">Hardware</button>
-      </div>
-    </section>
-
     <!-- SECTION 1: RESEARCH & PROJECTS -->
-    <section class="work-section container" id="projects" data-work-section="research" aria-labelledby="projects-title">
-      <div class="section-header reveal-item">
+    <section class="work-section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-header reveal-item" id="work">
         <div>
           <p class="nv-kicker">Academic Research &amp; Systems Engineering</p>
           <h2 id="projects-title">Research &amp; Engineering</h2>
         </div>
-        <p class="section-desc">Online reinforcement learning calibration in NVIDIA Isaac Lab, whole-body motion planning &amp; MPC, autonomous mobile manipulation, and bilateral haptic control.</p>
       </div>
       <div class="work-list">
         ${researchItems.map(p => renderExperienceCard(p)).join('')}
@@ -460,7 +446,7 @@ export function renderHome() {
     </section>
 
     <!-- SECTION 3: HACKATHONS -->
-    <section class="work-section container" id="hackathons" data-work-section="hackathon" aria-labelledby="hackathons-title">
+    <section class="work-section container" id="hackathons" aria-labelledby="hackathons-title">
       <div class="section-header reveal-item">
         <div>
           <p class="nv-kicker">Rapid Prototyping &amp; Control Sprints</p>
